@@ -20,16 +20,18 @@ def log(lvl, msg):
     print('[%s] %s: %s' % (str(datetime.now()), lvl, msg))
 
 
-def print_progress(iteration, total, prefix='>progress: ', suffix='complete',
-                   decimals=1, length=50, fill='#'):
+def print_progress(iteration, total, prefix='PROG', suffix='',
+                   decimals=1, length=50, fill='>'):
     percent = ("{0:." +
                str(decimals) + "f}").format(100 * (iteration / float(total)))
     filledLength = int(length * iteration // total)
     bar = fill * filledLength + '-' * (length - filledLength)
-    sys.stdout.write('\r%s |%s| %s%% %s' % (prefix, bar, percent, suffix))
+    sys.stdout.write('\r[%s] %s: |%s| %s%% %s' % (str(datetime.now()),
+                                                prefix, bar, percent, suffix))
     # Print New Line on Complete
     if iteration == total:
         print("")
+        log(INFO, "Job Done.")
 
 
 def print_cal_events(gcal):

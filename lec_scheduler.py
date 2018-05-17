@@ -10,6 +10,7 @@ lec_scheduler.py:
 import json
 import os
 import signal
+import utils
 
 
 def signal_handler(signal, frame):
@@ -21,4 +22,8 @@ def signal_handler(signal, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 
-def schedule_lectures(ics_path):
+def schedule_lectures(ics_path, func):
+    '''read ICS from @ics_path and schedule @func at given time'''
+    utils.log('INFO', 'Starting scheduling capturing...')
+    gcal = utils.get_cal(ics_path)
+    utils.print_cal_events(gcal)

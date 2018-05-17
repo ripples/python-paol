@@ -13,6 +13,7 @@ import sys
 import os
 import signal
 import json
+from lec_sched import lec_scheduler
 
 
 def signal_handler(signal, frame):
@@ -25,6 +26,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 
 def main():
+    lec_scheduler.schedule_lectures('./lec_sched/Calendar.ics', None)
     return
 
 
