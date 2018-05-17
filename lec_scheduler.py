@@ -10,8 +10,9 @@ lec_scheduler.py:
 import json
 import os
 import signal
-import utils
 
+import utils
+import cal_receiver
 
 def signal_handler(signal, frame):
     '''Force quit when detected Ctrl+C'''
