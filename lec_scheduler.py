@@ -55,5 +55,6 @@ def schedule_lectures(ics_path, func):
             job = Monitor.Monitor(s, func, args, start_time)
             Monitor.MONITORS.append(job)
 
+    # Schedule all events
     for mo in Monitor.MONITORS:
-        mo.start()
+        mo.schedule_task()

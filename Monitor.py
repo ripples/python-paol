@@ -25,17 +25,21 @@ class Monitor:
     '''
     def __init__(self, s, func, args, dt):
         self.schedule = s
+        self._scheduled = False
         self._running = False
         self.func = func
         self.args = args
         self.dt = dt
 
     def __str__(self):
-        return str(self.dt)
+        return self.func.__name__ + ' at ' + str(self.dt) + ' s'
+               + str(int(self._scheduled))
+               + 'r' + str(int(self._running))
 
     def start_task(self, func, args):
         utils.log('INFO', 'Initializing task: ' + func.__name__)
         utils.log('INFO', 'Running task: ' + func.__name__ + str(args))
+        self._running = True
         ret = self.func(args)
         if ret is '0':
             utils.log('INFO', 'Task ' + func.__name__ + ' Done.')
@@ -48,7 +52,7 @@ class Monitor:
             utils.log('ERR ', 'Error ' + ret + ' encountered during Task'
                       + func.__name__)
         utils.log('INFO', 'Finishing task: ' + func.__name__)
-        return
+        self._running = False
 
     def schedule_task(self):
         func = self.func
@@ -60,16 +64,22 @@ class Monitor:
         self.t = Timer((dt-timezone.localize(datetime.now())).total_seconds(),
                        self.start_task, args=(func, args))
         self.t.start()
-        utils.log('INFO', 'Task '
-                  + func.__name__ + ' scheduled at ' + str(dt))
 
-    def start(self):
-        self._running = True
-        self.schedule_task()
+        self._scheduled = True
+        utils.log('INFO', 'Scheduled task: '
+                  + func.__name__ + ' at ' + str(dt))
 
-    def stop(self):
-        self._running = False
-        if self.t:
-            self.t.cancel()
-        utils.log('INFO', 'Stopped task '
+    def cancel_task(self):
+        utils.log('INFO', 'Cancelling task '
                   + self.func.__name__ + ' at ' + str(self.dt))
+        if self.t and not self._running:
+            self.t.cancel()
+
+            self._scheduled = False
+            utils.log('INFO', 'Cancelled task '
+                      + self.func.__name__ + ' at ' + str(self.dt))
+            return 0
+        else:
+            utils.log('WARN', 'Unable to cancel running Task '
+                      + self.func.__name__ + ' at ' + str(self.dt))
+            return 1
