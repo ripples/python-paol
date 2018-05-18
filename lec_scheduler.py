@@ -10,9 +10,15 @@ lec_scheduler.py:
 import json
 import os
 import signal
+import sched
+import pytz
+import time
+from datetime import datetime, timedelta
 
 import utils
 import cal_receiver
+import Monitor
+
 
 def signal_handler(signal, frame):
     '''Force quit when detected Ctrl+C'''
@@ -28,3 +34,26 @@ def schedule_lectures(ics_path, func):
     utils.log('INFO', 'Starting scheduling capturing...')
     gcal = utils.get_cal(ics_path)
     utils.print_cal_events(gcal)
+
+    # initialize scheduler for events
+    s = sched.scheduler(time.time, time.sleep)
+    timezone = pytz.timezone("US/Eastern")
+
+    for component in gcal.walk():
+        if component.name == "VEVENT":
+            summary = component.get('summary')
+            start_time = component.get('dtstart').dt
+            end_time = component.get('dtend').dt
+            time_delta = end_time - start_time
+            seconds = time_delta.total_seconds()
+            args = summary.split(' ')
+            args.append(seconds)
+
+            # create new Monitor
+            if start_time < timezone.localize(datetime.now()):
+                continue
+            job = Monitor.Monitor(s, func, args, start_time)
+            Monitor.MONITORS.append(job)
+
+    for mo in Monitor.MONITORS:
+        mo.start()
