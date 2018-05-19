@@ -6,6 +6,9 @@ test_cal_generator.py:
 '''
 
 from datetime import datetime, timedelta
+import icalendar
+
+import schedule_now
 
 
 TESTCALFNAME = 'CalendarTest.ics'
@@ -13,7 +16,7 @@ TESTCALFNAME = 'CalendarTest.ics'
 SUMMARY = 'SPRING18 PAOL_001232_FA17_CNAC'
 
 
-def init_test_eve(cal_fname):
+def init_test_eve():
     '''Create two intercepted simple tasks to '''
     cal = icalendar.Calendar()
     cal.add('prodid', '-//My calendar//umass.edu//')
@@ -26,22 +29,24 @@ def init_test_eve(cal_fname):
     f.write(cal.to_ical())
     f.close()
 
+    schedule_now.main(TESTCALFNAME)
+
 
 def add_eve2cal(gcal, summary, delay, duration):
-'''Add event to gcal with delay and duration'''
+    '''Add event to gcal with delay and duration'''
     if not gcal:
         return None
     event = icalendar.Event()
     event.add('summary', summary)
- + duration
     b = datetime.now() + timedelta(0, delay)
     event.add('dtstart', b)
-    event.add('dtend', b + timedelta(0, delay))
+    event.add('dtend', b + timedelta(0, duration))
     event.add('dtstamp', datetime.now())
 
-    event['uid'] = datetime.strftime(datetime.now(), '%c').strip()
-    +'/ziweihe@umass.edu'
+    event['uid'] = str(datetime.strftime(datetime.now(), '%c').strip())
     event.add('priority', 5)
 
     gcal.add_component(event)
     return gcal
+
+init_test_eve()

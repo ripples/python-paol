@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 '''
-capture_now.py:
+schedule_now.py:
     Manual entry point of the capturing system.
 
     Argv[1]: {Current Semester}
@@ -13,7 +13,10 @@ import sys
 import os
 import signal
 import json
+import time
+
 import lec_scheduler
+import utils
 
 
 def signal_handler(signal, frame):
@@ -25,9 +28,16 @@ def signal_handler(signal, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 
-def main():
+def main(cal_path):
+    lec_scheduler.schedule_lectures(cal_path, func)
     return
 
 
+def func(args):
+    utils.log('INFO', 'Capturing ' + str(args))
+    time.sleep(args[2])
+    return '1'
+
+
 if __name__ == '__main__':
-    main()
+    main('./Calendar.ics')

@@ -7,21 +7,24 @@ cal_receiver.py:
 
 import os
 import posixpath
-import BaseHTTPServer
+from http.server import HTTPServer, BaseHTTPRequestHandler
 import urllib
 import shutil
 import icalendar
 import utils
 import pytz
 import datetime
-from StringIO import StringIO
+from io import StringIO
 
 import lec_scheduler
 import utils
 import Monitor
 
 
-def on_cal_changed(gcal):
+PORT = 8000
+
+
+def on_cal_changed(gcal, func):
     '''update scheduled lectures when calendar is changed'''
     utils.log('INFO', 'On Calendar Changed Callback...')
     timezone = pytz.timezone("US/Eastern")
@@ -41,7 +44,7 @@ def on_cal_changed(gcal):
             # create new Monitor
             if start_time < timezone.localize(datetime.now()):
                 continue
-            job = Monitor.Monitor(s, func, args, start_time)
+            job = Monitor.Monitor(Monitor.SCHED, func, args, start_time)
             m_temp.append(job)
 
     # Cancel scheduled Tasks
@@ -51,7 +54,7 @@ def on_cal_changed(gcal):
         if status == 0:
             Monitor.MONITORS.pop(mo)
 
-    for mo in mo_temp:
+    for mo in m_temp:
         if mo.dt < timezone.localize(datetime.now()):
             continue
         Monitor.MONITORS.append(mo)
@@ -60,7 +63,7 @@ def on_cal_changed(gcal):
         mo.schedule_task()
 
 
-def CalHandler(BaseHTTPServer.BaseHTTPRequestHandler):
+class CalHandler(BaseHTTPRequestHandler):
     '''Simple HTTP Handler retrieve calendar file'''
     def do_POST(self):
         '''Serve a POST request'''
@@ -83,8 +86,84 @@ def CalHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             self.copyfile(f, self.wfile)
             f.close()
 
+    def process_post_data(self):
+        utils.log('INFO', self.headers)
+        boundary = self.headers.plisttext.split("=")[1]
+        utils.log('INFO', 'Boundary %s' % boundary)
+        remainbytes = int(self.headers['content-length'])
+        utils.log('INFO', "Remain Bytes %s" % remainbytes)
+        line = self.rfile.readline()
+        remainbytes -= len(line)
+        if boundary not in line:
+            return (False, "Content NOT begin with boundary")
+        line = self.rfile.readline()
+        remainbytes -= len(line)
+        fn = "ICS/Calendar.ics"
+        line = self.rfile.readline()
+        remainbytes -= len(line)
+        line = self.rfile.readline()
+        remainbytes -= len(line)
+        try:
+            out = open(fn, 'wb')
+        except IOError:
+            return (False, "No Write Permission")
+
+        if line.strip():
+            preline = line
+        else:
+            preline = self.rfile.readline()
+        remainbytes -= len(preline)
+        while 1:
+            line = self.rfile.readline()
+            # print(line)
+            remainbytes -= len(line)
+            if boundary in line:
+                preline = preline[0:-1]
+                if preline.endswith('\r'):
+                    preline = preline[0:-1]
+                out.write(preline)
+                out.close()
+
+                g = open(fn, 'rb')
+                gcal = icalendar.Calendar.from_ical(g.read())
+                on_cal_changed(gcal, )
+
+                return (True, "File '%s' upload success!" % fn)
+            else:
+                out.write(preline)
+                preline = line
+        return (False, "Unexpect Ends of data.")
+
+    def translate_path(self, path):
+        """Translate a /-separated PATH to the local filename syntax.
+
+        Components that mean special things to the local file system
+        (e.g. drive or directory names) are ignored.  (XXX They should
+        probably be diagnosed.)
+
+        """
+        # abandon query parameters
+        path = path.split('?', 1)[0]
+        path = path.split('#', 1)[0]
+        path = posixpath.normpath(urllib.unquote(path))
+        words = path.split('/')
+        words = filter(None, words)
+        path = os.getcwd()
+        for word in words:
+            drive, word = os.path.splitdrive(word)
+            head, word = os.path.split(word)
+            if word in (os.curdir, os.pardir):
+                continue
+            path = os.path.join(path, word)
+        return path
+
+    def copyfile(self, source, outputfile):
+        shutil.copyfileobj(source, outputfile)
 
 
 def start_server(HandlerClass=CalHandler,
-                 ServerClass=BaseHTTPServer.HTTPServer):
-    BaseHTTPServer.test(HandlerClass, ServerClass)
+                 ServerClass=HTTPServer):
+    utils.log('INFO', 'Serving POST on port ' + str(PORT) + '...')
+    server_address = ('', PORT)
+    httpd = ServerClass(server_address, HandlerClass)
+    httpd.serve_forever()

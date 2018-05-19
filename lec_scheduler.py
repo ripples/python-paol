@@ -34,9 +34,10 @@ def schedule_lectures(ics_path, func):
     utils.log('INFO', 'Starting scheduling capturing...')
     gcal = utils.get_cal(ics_path)
     utils.print_cal_events(gcal)
+    Monitor.FUNC = func
 
     # initialize scheduler for events
-    s = sched.scheduler(time.time, time.sleep)
+    Monitor.SCHED = sched.scheduler(time.time, time.sleep)
     timezone = pytz.timezone("US/Eastern")
 
     for component in gcal.walk():
@@ -50,11 +51,17 @@ def schedule_lectures(ics_path, func):
             args.append(seconds)
 
             # create new Monitor
-            if start_time < timezone.localize(datetime.now()):
+            if timezone.localize(start_time) < timezone.localize(datetime.now()):
                 continue
-            job = Monitor.Monitor(s, func, args, start_time)
+            job = Monitor.Monitor(Monitor.SCHED, func, args, start_time)
             Monitor.MONITORS.append(job)
 
     # Schedule all events
     for mo in Monitor.MONITORS:
         mo.schedule_task()
+    utils.log('INFO', 'Finished scheduling capturing...')
+
+    cal_receiver.start_server()
+
+    while 1:
+        pass

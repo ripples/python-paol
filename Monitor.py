@@ -14,6 +14,10 @@ import utils
 
 MONITORS = []
 
+FUNC = None
+
+SCHED = None
+
 
 class Monitor:
     '''
@@ -29,12 +33,13 @@ class Monitor:
         self._running = False
         self.func = func
         self.args = args
-        self.dt = dt
+        timezone = pytz.timezone("US/Eastern")
+        self.dt = timezone.localize(dt)
 
     def __str__(self):
-        return self.func.__name__ + ' at ' + str(self.dt) + ' s'
-               + str(int(self._scheduled))
-               + 'r' + str(int(self._running))
+        return self.func.__name__ + ' at '
+        + str(self.dt) + ' s' + str(int(self._scheduled))
+        + 'r' + str(int(self._running))
 
     def start_task(self, func, args):
         utils.log('INFO', 'Initializing task: ' + func.__name__)
@@ -49,7 +54,7 @@ class Monitor:
             # _, er = pu.funcunicate()
             # print("==>Return code: "+str(pu.returncode))
         else:
-            utils.log('ERR ', 'Error ' + ret + ' encountered during Task'
+            utils.log('ERR ', 'Error ' + ret + ' encountered during Task '
                       + func.__name__)
         utils.log('INFO', 'Finishing task: ' + func.__name__)
         self._running = False
