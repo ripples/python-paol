@@ -18,6 +18,7 @@ import time
 import utils
 import config
 import init_setup
+import lec_cap, bb_cap, wb_cap, comp_cap
 
 
 def signal_handler(signal, frame):
@@ -48,9 +49,19 @@ def capture(args):
 
 
     utils.log('INFO', 'Start capturing ' + str(args))
-    for i in range(int(args[2])):
-        time.sleep(1)
-        utils.log('INFO', 'Time elapsed: ' + str(i))
+    conf = config.load_all_config()
+
+    for device, type in conf.items():
+        type = int(type)
+        if type == 2:
+            lec_cap.trigger_cap(device, args)
+        if type == 3:
+            wb_cap.trigger_cap(device, args)
+        if type == 4:
+            bb_cap.trigger_cap(device, args)
+        if type == 5:
+            comp_cap.trigger_cap(device, args)
+
 
     return '0'
 
