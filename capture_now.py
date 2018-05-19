@@ -16,6 +16,8 @@ import json
 import time
 
 import utils
+import config
+import init_setup
 
 
 def signal_handler(signal, frame):
@@ -37,12 +39,20 @@ def main():
 
 
 def capture(args):
-    utils.log('INFO', 'Capturing ' + str(args))
+    '''captures according to config file'''
+    if not config.load_all_config() or config.is_config_invalid():
+        utils.log('WARN', 'Hardware not configured. Running init setup GUI...')
+        init_setup.main()
+        utils.log('WARN', 'Please restart the program.')
+        return
+
+
+    utils.log('INFO', 'Start capturing ' + str(args))
     for i in range(int(args[2])):
         time.sleep(1)
         utils.log('INFO', 'Time elapsed: ' + str(i))
 
-    return '1'
+    return '0'
 
 
 if __name__ == '__main__':

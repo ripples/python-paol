@@ -44,17 +44,13 @@ def load_all_config():
     if len(j_data) < 1:
         utils.log('WARN', 'Conf file contents no configs.')
         return None
-    j_dict = j_data[0]
+    j_dict = j_data
     return j_dict
 
 
-def load_config(key):
-    '''
-        Load conf from @CONFSRC and return corresponding val of @key
-        return None if no conf file is found
-        return None if no conf entries is found
-    '''
-    utils.log('INFO', 'Loading all Conf...')
+def is_config_invalid():
+    '''Check if not all NOT_SET or out-dated'''
+    utils.log('INFO', 'Checking Config')
     j_file = None
     try:
         j_file = open(CONFSRC)
@@ -67,7 +63,44 @@ def load_config(key):
     if len(j_data) < 1:
         utils.log('WARN', 'Conf file contents no configs.')
         return None
-    j_dict = j_data[0]
+    j_dict = j_data
+
+    dev_list = os.listdir('/dev')
+    video_devices = [s for s in dev_list if "video" in s]
+
+    # Check if device count matches config file count
+    if len(video_devices) != len(j_dict.items()):
+        utils.log('INFO', 'Config validation is outdated.')
+        return False
+
+    ret = False
+    for entry in j_dict.values():
+        if entry is not '0':
+            ret = True
+    utils.log('INFO', 'Config validation returns ' + str(ret))
+    return ret
+
+
+def load_config(key):
+    '''
+        Load conf from @CONFSRC and return corresponding val of @key
+        return None if no conf file is found
+        return None if no conf entries is found
+    '''
+    utils.log('INFO', 'Loading Conf...')
+    j_file = None
+    try:
+        j_file = open(CONFSRC)
+    except IOError:
+        utils.log('WARN', 'No config file found.')
+        return None
+    j_str = j_file.read()
+    j_data = json.loads(j_str)
+    # Check if entries are empty
+    if len(j_data) < 1:
+        utils.log('WARN', 'Conf file contents no configs.')
+        return None
+    j_dict = j_data
     return j_dict.get(key)
 
 

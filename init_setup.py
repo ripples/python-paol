@@ -92,6 +92,9 @@ class SetupGUI:
 
 
     def video_loop(self, *args):
+        f = open("minor_err.txt", "w+")
+        sto = sys.stderr
+        sys.stderr = f
         i = args[0]
         try:
             # keep looping over frames until we are instructed to stop
@@ -130,5 +133,10 @@ class SetupGUI:
         # for c in self.caps:
         #     c.release()
 
-sg = SetupGUI()
-sg.root.mainloop()
+
+def main():
+    sg = SetupGUI()
+    sg.root.mainloop()
+
+if __name__=="__main__":
+    main()
