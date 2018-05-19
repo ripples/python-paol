@@ -3,6 +3,17 @@
 '''
 config.py:
     Config R/W Utility
+
+    format:
+        [device:type_num, ]
+
+    type:type_num
+        'NOT_SET':0,
+        'DISABLED':1,
+        'LECTURE(w/ AUDIO)':2,
+        'WHITEBOARD':3,
+        'BLACKBOARD':4,
+        'COMPUTER':5,
 '''
 
 import json
@@ -60,9 +71,15 @@ def load_config(key):
     return j_dict.get(key)
 
 
-def write_config(jdict):
-    '''Write entries in @jdict to @CONFSRC'''
+def add_config(jdict):
+    '''Add entries in @jdict to @CONFSRC'''
     with open(CONFSRC, 'w+') as f:
         j_data = json.load(f)
         j_data.update(jdict)
         json.dump(j_data, f)
+
+
+def write_config(jdict):
+    '''Write entries in @jdict to @CONFSRC'''
+    with open(CONFSRC, 'w+') as f:
+        json.dump(jdict, f)
