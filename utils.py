@@ -9,7 +9,7 @@ import icalendar
 from datetime import datetime
 import pytz
 import sys
-import getpass
+import socket
 
 
 INFO = 'INFO'
@@ -21,6 +21,8 @@ def log(lvl, msg):
     '''logging'''
     str_log = '[%s] %s: %s' % (str(datetime.now().strftime("%y%m%d-%H%M%S")), lvl, msg)
     print(str_log)
+    with open('./logs/general.log', 'a+') as f:
+        f.write(str_log + '\n')
 
 
 def utc_now():
@@ -29,17 +31,16 @@ def utc_now():
 
 
 def print_progress(iteration, total, prefix='PROG', suffix='',
-                   decimals=1, length=50, fill='>'):
+                   decimals=1, length=25, fill='>'):
     percent = ("{0:." +
                str(decimals) + "f}").format(100 * (iteration / float(total)))
     filledLength = int(length * iteration // total)
     bar = fill * filledLength + '-' * (length - filledLength)
-    sys.stdout.write('\r[%s] %s: |%s| %s%% %s' % (str(datetime.now()),
+    sys.stdout.write('\r[%s] %s: |%s| %s%% %s' % (str(datetime.now().strftime("%y%m%d-%H%M%S")),
                                                 prefix, bar, percent, suffix))
     # Print New Line on Complete
     if iteration == total:
         print("")
-        log(INFO, "Job Done.")
 
 
 def print_cal_events(gcal):
@@ -75,7 +76,7 @@ def writeINFO(save_path, wb, com, args):
         f.write('[pres]' + '\n')
         f.write('start: ' + now.strftime('%y,%m,%d,%H,%M,%S') + '\n')
         f.write('duration: ' + str(int(args[2])) + '\n')
-        f.write('source: ' + getpass.getuser() + '\n')
-        f.write('timestamp: ' + str(now.timestamp()) + '\n')
+        f.write('source: ' + socket.gethostname() + '\n')
+        f.write('timestamp: ' + str(int(now.timestamp())) + '\n')
         f.write('whiteboardCount: ' + str(wb) + '\n')
         f.write('computerCount: ' + str(com) + '\n')

@@ -17,6 +17,7 @@ def trigger_cap(device, argp, path):
     th = threading.Thread(target=capture, args=(device, argp, path,))
     th.start()
 
+
 def capture(*args):
     device = args[0]
     argv = args[1]
@@ -32,7 +33,6 @@ def capture(*args):
         if (last_update is not None
             and (utils.utc_now()-last_update).total_seconds() < INTERVAL):
             continue
-        utils.log('INFO', 'Grabbing frame...')
         last_update = utils.utc_now()
         # Capture frame-by-frame
         ret, frame = cap.read()

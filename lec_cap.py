@@ -15,8 +15,8 @@ def trigger_cap(device, args, path):
     comm = COMM + path + 'videoLarge.mp4'
     comm = comm.replace('@TIME', time.strftime('%H:%M:%S', time.gmtime(args[2])))
     comm = comm.replace('@DEVICE', device)
-    
+
     st = None
-    with open('./logs/ffmpeg.log', 'a+') as f:
+    with open('./logs/ffmpeg.log', 'w+') as f:
         st = subprocess.Popen(comm, stdout=f, stderr=f, shell=True)
     return st

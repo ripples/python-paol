@@ -104,13 +104,16 @@ def capture(args):
             utils.log('INFO', ' COMPUTER')
             comp_cap.trigger_cap(device, args, save_path)
 
-    if st:
-        _, err = st.communicate()
-        utils.log('INFO', 'LecCap Error: '+str(err))
+    # if st:
+    #     _, err = st.communicate()
+    #     utils.log('INFO', 'LecCap Error: '+str(err))
 
 
     while (datetime.utcnow() - then).total_seconds() < args[2]:
+        utils.print_progress((datetime.utcnow() - then).total_seconds(), args[2])
         pass
+
+    print()
     return '0'
 
 
