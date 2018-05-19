@@ -13,7 +13,9 @@ import sys
 import os
 import signal
 import json
-import lec_scheduler
+import time
+
+import utils
 
 
 def signal_handler(signal, frame):
@@ -26,7 +28,21 @@ signal.signal(signal.SIGINT, signal_handler)
 
 
 def main():
+    args = sys.argv[1:]
+    if len(args) != 3:
+        utils.log('ERR ', 'Invalid Arguments')
+        return
+    capture(args)
     return
+
+
+def capture(args):
+    utils.log('INFO', 'Capturing ' + str(args))
+    for i in range(int(args[2])):
+        time.sleep(1)
+        utils.log('INFO', 'Time elapsed: ' + str(i))
+
+    return '1'
 
 
 if __name__ == '__main__':

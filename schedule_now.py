@@ -16,6 +16,7 @@ import json
 import time
 
 import lec_scheduler
+import capture_now
 import utils
 
 
@@ -29,14 +30,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 
 def main(cal_path):
-    lec_scheduler.schedule_lectures(cal_path, func)
-    return
-
-
-def func(args):
-    utils.log('INFO', 'Capturing ' + str(args))
-    time.sleep(args[2])
-    return '1'
+    lec_scheduler.schedule_lectures(cal_path, capture_now.capture)
 
 
 if __name__ == '__main__':

@@ -24,7 +24,7 @@ import Monitor
 PORT = 8000
 
 
-def on_cal_changed(gcal, func):
+def on_cal_changed(gcal):
     '''update scheduled lectures when calendar is changed'''
     utils.log('INFO', 'On Calendar Changed Callback...')
     timezone = pytz.timezone("US/Eastern")
@@ -44,7 +44,7 @@ def on_cal_changed(gcal, func):
             # create new Monitor
             if start_time < timezone.localize(datetime.now()):
                 continue
-            job = Monitor.Monitor(Monitor.SCHED, func, args, start_time)
+            job = Monitor.Monitor(Monitor.SCHED, Monitor.FUNC, args, start_time)
             m_temp.append(job)
 
     # Cancel scheduled Tasks
@@ -72,8 +72,10 @@ class CalHandler(BaseHTTPRequestHandler):
         f = StringIO()
 
         if r:
+            utils.log('INFO', info)
             f.write("<strong>Success:</strong>")
         else:
+            utils.log('ERR ', info)
             f.write("<strong>Failed:</strong>")
 
         length = f.tell()
@@ -126,7 +128,7 @@ class CalHandler(BaseHTTPRequestHandler):
 
                 g = open(fn, 'rb')
                 gcal = icalendar.Calendar.from_ical(g.read())
-                on_cal_changed(gcal, )
+                on_cal_changed(gcal)
 
                 return (True, "File '%s' upload success!" % fn)
             else:
