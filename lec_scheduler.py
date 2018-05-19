@@ -38,7 +38,6 @@ def schedule_lectures(ics_path, func):
 
     # initialize scheduler for events
     Monitor.SCHED = sched.scheduler(time.time, time.sleep)
-    timezone = pytz.timezone("US/Eastern")
 
     for component in gcal.walk():
         if component.name == "VEVENT":
@@ -51,7 +50,7 @@ def schedule_lectures(ics_path, func):
             args.append(seconds)
 
             # create new Monitor
-            if timezone.localize(start_time) < timezone.localize(datetime.now()):
+            if start_time < utils.utc_now():
                 continue
             job = Monitor.Monitor(Monitor.SCHED, func, args, start_time)
             Monitor.MONITORS.append(job)

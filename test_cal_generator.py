@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 import icalendar
 
 import schedule_now
+import utils
 
 
 TESTCALFNAME = 'CalendarTest.ics'
@@ -22,8 +23,8 @@ def init_test_eve():
     cal.add('prodid', '-//My calendar//umass.edu//')
     cal.add('version', '2.0')
 
-    cal = add_eve2cal(cal, SUMMARY, 5, 20)
-    cal = add_eve2cal(cal, SUMMARY, 10, 20)
+    cal = add_eve2cal(cal, SUMMARY, 3, 15)
+    cal = add_eve2cal(cal, SUMMARY, 25, 7)
 
     f = open(TESTCALFNAME, 'wb')
     f.write(cal.to_ical())
@@ -38,12 +39,12 @@ def add_eve2cal(gcal, summary, delay, duration):
         return None
     event = icalendar.Event()
     event.add('summary', summary)
-    b = datetime.now() + timedelta(0, delay)
+    b = utils.utc_now() + timedelta(0, delay)
     event.add('dtstart', b)
     event.add('dtend', b + timedelta(0, duration))
-    event.add('dtstamp', datetime.now())
+    event.add('dtstamp', utils.utc_now())
 
-    event['uid'] = str(datetime.strftime(datetime.now(), '%c').strip())
+    event['uid'] = str(datetime.strftime(utils.utc_now(), '%c').strip())
     event.add('priority', 5)
 
     gcal.add_component(event)

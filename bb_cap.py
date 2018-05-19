@@ -6,5 +6,5 @@
 '''
 
 
-def trigger_cap(device, args):
+def trigger_cap(device, args, path):
     return

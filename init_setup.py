@@ -92,7 +92,7 @@ class SetupGUI:
 
 
     def video_loop(self, *args):
-        f = open("minor_err.txt", "w+")
+        f = open("./logs/gui_err.log", "w+")
         sto = sys.stderr
         sys.stderr = f
         i = args[0]
@@ -123,8 +123,8 @@ class SetupGUI:
                     self.panels[i].image = image
             exit
         except RuntimeError as e:
-            utils.log('INFO', 'RuntimeError when grabbing frame:')
-            utils.log('INFO', e)
+            utils.log('WARN', 'RuntimeError on GUI.')
+            utils.log('INFO', 'Check logs/gui_err.log for details.')
 
     def on_close(self):
         utils.log('INFO', 'Closing SETUP Window...')

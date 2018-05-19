@@ -35,8 +35,7 @@ class Monitor:
         self._running = False
         self.func = func
         self.args = args
-        timezone = pytz.timezone("US/Eastern")
-        self.dt = timezone.localize(dt)
+        self.dt = dt
 
     def __str__(self):
         return self.func.__name__ + ' at '
@@ -68,7 +67,7 @@ class Monitor:
         utils.log('INFO', 'Scheduling task: '
                   + func.__name__ + ' at ' + str(dt))
         timezone = pytz.timezone("US/Eastern")
-        self.t = Timer((dt-timezone.localize(datetime.now())).total_seconds(),
+        self.t = Timer((dt-utils.utc_now()).total_seconds(),
                        self.start_task, args=(func, args))
         self.t.start()
 

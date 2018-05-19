@@ -27,7 +27,6 @@ PORT = 8000
 def on_cal_changed(gcal):
     '''update scheduled lectures when calendar is changed'''
     utils.log('INFO', 'On Calendar Changed Callback...')
-    timezone = pytz.timezone("US/Eastern")
     m_temp = []
     utils.log('INFO', 'Printing New Calendar Info...')
     utils.print_cal_events(gcal)
@@ -42,7 +41,7 @@ def on_cal_changed(gcal):
             args.append(seconds)
 
             # create new Monitor
-            if start_time < timezone.localize(datetime.now()):
+            if start_time < utils.utc_now():
                 continue
             job = Monitor.Monitor(Monitor.SCHED, Monitor.FUNC, args, start_time)
             m_temp.append(job)
@@ -55,7 +54,7 @@ def on_cal_changed(gcal):
             Monitor.MONITORS.pop(mo)
 
     for mo in m_temp:
-        if mo.dt < timezone.localize(datetime.now()):
+        if mo.dt < utils.utc_now():
             continue
         Monitor.MONITORS.append(mo)
 

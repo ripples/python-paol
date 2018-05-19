@@ -7,7 +7,9 @@ utils.py:
 
 import icalendar
 from datetime import datetime
+import pytz
 import sys
+import getpass
 
 
 INFO = 'INFO'
@@ -17,7 +19,13 @@ WARN = 'WARN'
 
 def log(lvl, msg):
     '''logging'''
-    print('[%s] %s: %s' % (str(datetime.now()), lvl, msg))
+    str_log = '[%s] %s: %s' % (str(datetime.now().strftime("%y%m%d-%H%M%S")), lvl, msg)
+    print(str_log)
+
+
+def utc_now():
+    '''return absolute datetime object of datetime.now()'''
+    return datetime.utcnow()
 
 
 def print_progress(iteration, total, prefix='PROG', suffix='',
@@ -54,3 +62,20 @@ def get_cal(filename):
     else:
         log(ERR, 'UNABLE TO LOAD ICS FILE.')
     return gcal
+
+
+def writeINFO(save_path, wb, com, args):
+    '''generate INFO at save_path'''
+    now = datetime.now()
+    with open(save_path + 'INFO', 'w+') as f:
+        f.write('[course]' + '\n')
+        f.write('id: ' + args[1] + '\n')
+        f.write('term: ' + args[0] + '\n')
+        f.write('' + '\n')
+        f.write('[pres]' + '\n')
+        f.write('start: ' + now.strftime('%y,%m,%d,%H,%M,%S') + '\n')
+        f.write('duration: ' + str(int(args[2])) + '\n')
+        f.write('source: ' + getpass.getuser() + '\n')
+        f.write('timestamp: ' + str(now.timestamp()) + '\n')
+        f.write('whiteboardCount: ' + str(wb) + '\n')
+        f.write('computerCount: ' + str(com) + '\n')
