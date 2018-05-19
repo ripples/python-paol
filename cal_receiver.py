@@ -100,7 +100,7 @@ class CalHandler(BaseHTTPRequestHandler):
             return (False, "Content NOT begin with boundary")
         line = self.rfile.readline()
         remainbytes -= len(line)
-        fn = "ICS/Calendar.ics"
+        fn = Monitor.CAL_FILE
         line = self.rfile.readline()
         remainbytes -= len(line)
         line = self.rfile.readline()

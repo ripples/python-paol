@@ -3,10 +3,6 @@
 '''
 schedule_now.py:
     Manual entry point of the capturing system.
-
-    Argv[1]: {Current Semester}
-    Argv[2]: {Current Course}
-    Argv[3]: {Duration in sec}
 '''
 
 import sys
@@ -18,6 +14,7 @@ import time
 import lec_scheduler
 import capture_now
 import utils
+import Monitor
 
 
 def signal_handler(signal, frame):
@@ -34,4 +31,4 @@ def main(cal_path):
 
 
 if __name__ == '__main__':
-    main('./Calendar.ics')
+    main(Monitor.CAL_FILE)

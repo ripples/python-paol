@@ -18,6 +18,8 @@ FUNC = None
 
 SCHED = None
 
+CAL_FILE = './Calendar.ics'
+
 
 class Monitor:
     '''
