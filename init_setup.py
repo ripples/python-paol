@@ -66,7 +66,7 @@ class SetupGUI:
 
             self.type_vars.append(StringVar())
             self.type_vars[i].set('NOT_SET')
-            self.type_vars[i].trace_add('write', self.type_selected)
+            self.type_vars[i].trace('w', self.type_selected)
 
             self.setup_menus.append(OptionMenu(self.mainframe, self.type_vars[i], *SELECTIONS))
 

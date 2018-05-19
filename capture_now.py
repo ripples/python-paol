@@ -41,7 +41,7 @@ def main():
 
 def capture(args):
     '''captures according to config file'''
-    if not config.load_all_config() or config.is_config_invalid():
+    if not config.load_all_config() or not config.is_config_valid():
         utils.log('WARN', 'Hardware not configured. Running init setup GUI...')
         init_setup.main()
         utils.log('WARN', 'Please restart the program.')
@@ -52,6 +52,7 @@ def capture(args):
     conf = config.load_all_config()
 
     for device, type in conf.items():
+        utils.log('INFO', 'Triggerring ' + device)
         type = int(type)
         if type == 2:
             lec_cap.trigger_cap(device, args)

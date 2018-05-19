@@ -48,7 +48,7 @@ def load_all_config():
     return j_dict
 
 
-def is_config_invalid():
+def is_config_valid():
     '''Check if not all NOT_SET or out-dated'''
     utils.log('INFO', 'Checking Config')
     j_file = None
