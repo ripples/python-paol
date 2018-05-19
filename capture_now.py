@@ -21,6 +21,7 @@ import utils
 import config
 import init_setup
 import lec_cap, bb_cap, wb_cap, comp_cap
+import subprocess
 
 NOT_SET = 0
 DISABLED = 1
@@ -109,11 +110,16 @@ def capture(args):
     #     utils.log('INFO', 'LecCap Error: '+str(err))
 
 
-    while (datetime.utcnow() - then).total_seconds() < args[2]:
+    while (datetime.utcnow() - then).total_seconds() < args[2] + 1:
         utils.print_progress((datetime.utcnow() - then).total_seconds(), args[2])
         pass
 
     print()
+    utils.log('INFO', "==>Capturing successful, uploading all lectures")
+    pu = subprocess.Popen("~/paol-code/scripts/upload/uploadAll.sh", stdout=subprocess.PIPE, shell=True)
+    utils.log('INFO', "==>Uploading...")
+    _, er = pu.communicate()
+    utils.log('INFO', "==>Return code: "+str(pu.returncode))
     return '0'
 
 
