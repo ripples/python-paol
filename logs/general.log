@@ -536,3 +536,76 @@
 [180519-173200] INFO: ==>Return code: 0
 [180519-173200] INFO: Task capture Done.
 [180519-173200] INFO: Finishing task: capture
+[180520-133615] INFO: Starting scheduling capturing...
+[180520-133615] INFO: LOADING GCAL from CalendarTest.ics
+[180520-133615] INFO: LOADING Successful.
+[180520-133615] INFO: EVENT list of ICS file:
+[180520-133615] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180520-133615] INFO:   start:2018-05-20 17:36:18
+[180520-133615] INFO:   end:  2018-05-20 17:36:33
+[180520-133615] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180520-133615] INFO:   start:2018-05-20 17:36:40
+[180520-133615] INFO:   end:  2018-05-20 17:36:47
+[180520-133615] INFO: Scheduling task: capture at 2018-05-20 17:36:18
+[180520-133615] INFO: Scheduled task: capture at 2018-05-20 17:36:18
+[180520-133615] INFO: Scheduling task: capture at 2018-05-20 17:36:40
+[180520-133615] INFO: Scheduled task: capture at 2018-05-20 17:36:40
+[180520-133615] INFO: Finished scheduling capturing...
+[180520-133615] INFO: Serving POST on port 8000...
+[180520-133618] INFO: Initializing task: capture
+[180520-133618] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180520-133618] INFO: Loading all Conf...
+[180520-133618] INFO: Checking Config
+[180520-133618] INFO: Config validation is outdated.
+[180520-133618] WARN: Hardware not configured. Running init setup GUI...
+[180520-133618] INFO: Searching for available video devices...
+[180520-133618] INFO: Found 2 video devices:
+[180520-133618] INFO:  video1
+[180520-133618] INFO:  video2
+[180520-133618] INFO: Config updated:
+[180520-133618] INFO:  video0 caps NOT_SET
+[180520-133618] INFO: Config updated:
+[180520-133618] INFO:  video0 caps NOT_SET
+[180520-133618] INFO:  video1 caps NOT_SET
+[180520-133640] INFO: Initializing task: capture
+[180520-133640] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180520-133640] INFO: Loading all Conf...
+[180520-133640] INFO: Checking Config
+[180520-133640] INFO: Config validation returns True
+[180520-133640] INFO: Preparing saving path...
+[180520-133640] INFO: Saving to /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-20-18--17-36-40/
+[180520-133640] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180520-133640] INFO: Loading all Conf...
+[180520-133640] INFO: Triggerring video0
+[180520-133640] INFO: Triggerring video1
+[180520-133644] INFO: Closing SETUP Window...
+[180520-133644] WARN: Please restart the program.
+[180520-133645] WARN: RuntimeError on GUI.
+[180520-133645] INFO: Check logs/gui_err.log for details.
+[180520-133700] INFO: Starting scheduling capturing...
+[180520-133700] INFO: LOADING GCAL from CalendarTest.ics
+[180520-133700] INFO: LOADING Successful.
+[180520-133700] INFO: EVENT list of ICS file:
+[180520-133700] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180520-133700] INFO:   start:2018-05-20 17:37:03
+[180520-133700] INFO:   end:  2018-05-20 17:37:18
+[180520-133700] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180520-133700] INFO:   start:2018-05-20 17:37:25
+[180520-133700] INFO:   end:  2018-05-20 17:37:32
+[180520-133700] INFO: Scheduling task: capture at 2018-05-20 17:37:03
+[180520-133700] INFO: Scheduled task: capture at 2018-05-20 17:37:03
+[180520-133700] INFO: Scheduling task: capture at 2018-05-20 17:37:25
+[180520-133700] INFO: Scheduled task: capture at 2018-05-20 17:37:25
+[180520-133700] INFO: Finished scheduling capturing...
+[180520-133700] INFO: Serving POST on port 8000...
+[180520-133703] INFO: Initializing task: capture
+[180520-133703] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180520-133703] INFO: Loading all Conf...
+[180520-133703] INFO: Checking Config
+[180520-133703] INFO: Config validation returns True
+[180520-133703] INFO: Preparing saving path...
+[180520-133703] INFO: Saving to /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-20-18--17-37-03/
+[180520-133703] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180520-133703] INFO: Loading all Conf...
+[180520-133703] INFO: Triggerring video1
+[180520-133703] INFO: Triggerring video0
