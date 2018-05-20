@@ -37,6 +37,7 @@ class SetupGUI:
         dev_list = os.listdir('/dev')
         video_devices = [s for s in dev_list if "video" in s]
         video_devices.sort()
+        self.devices = video_devices
         utils.log('INFO', 'Found ' + str(len(video_devices)) + ' video devices:')
         for item in video_devices:
             utils.log('INFO', ' ' + item)
@@ -86,8 +87,8 @@ class SetupGUI:
         utils.log('INFO', 'Config updated:')
         j_dict = {}
         for i in range(len(self.type_vars)):
-            utils.log('INFO', ' video' + str(i) + ' caps ' + self.type_vars[i].get())
-            j_dict['video'+str(i)] = SELECTIONS[self.type_vars[i].get()]
+            utils.log('INFO', str(self.devices[i]) + ' caps ' + self.type_vars[i].get())
+            j_dict[self.devices[i]] = SELECTIONS[self.type_vars[i].get()]
         config.write_config(j_dict)
 
 
