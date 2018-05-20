@@ -78,7 +78,7 @@ class SetupGUI:
         # Start threads constantly pulling image from all video devices
         self.stop_event = threading.Event()
         for i in range(len(video_devices)):
-            self.caps.append(cv2.VideoCapture(i))
+            self.caps.append(cv2.VideoCapture(int(self.devices[i][-1])))
             self.frames.append(None)
             self.threads.append(threading.Thread(target=self.video_loop, args=(i,)))
             self.threads[i].start()
