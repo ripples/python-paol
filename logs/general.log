@@ -609,3 +609,81 @@
 [180520-133703] INFO: Loading all Conf...
 [180520-133703] INFO: Triggerring video1
 [180520-133703] INFO: Triggerring video0
+[180521-153841] INFO: Searching for available video devices...
+[180521-153841] INFO: Found 1 video devices:
+[180521-153841] INFO:  video0
+[180521-153841] INFO: Config updated:
+[180521-153841] INFO: video0 caps COMPUTER
+[180521-153852] INFO: Closing SETUP Window...
+[180521-153853] WARN: RuntimeError on GUI.
+[180521-153853] INFO: Check logs/gui_err.log for details.
+[180521-153924] INFO: Searching for available video devices...
+[180521-153924] INFO: Found 2 video devices:
+[180521-153924] INFO:  video0
+[180521-153924] INFO:  video1
+[180521-153924] INFO: Config updated:
+[180521-153924] INFO: video0 caps COMPUTER
+[180521-153924] INFO: Config updated:
+[180521-153924] INFO: video0 caps COMPUTER
+[180521-153924] INFO: video1 caps COMPUTER
+[180521-153951] INFO: Config updated:
+[180521-153951] INFO: video0 caps DISABLED
+[180521-153951] INFO: video1 caps COMPUTER
+[180521-153953] INFO: Config updated:
+[180521-153953] INFO: video0 caps DISABLED
+[180521-153953] INFO: video1 caps LECTURE(w/ AUDIO)
+[180521-154005] INFO: Closing SETUP Window...
+[180521-154006] WARN: RuntimeError on GUI.
+[180521-154006] INFO: Check logs/gui_err.log for details.
+[180521-154006] WARN: RuntimeError on GUI.
+[180521-154006] INFO: Check logs/gui_err.log for details.
+[180521-154017] INFO: Starting scheduling capturing...
+[180521-154017] INFO: LOADING GCAL from CalendarTest.ics
+[180521-154017] INFO: LOADING Successful.
+[180521-154017] INFO: EVENT list of ICS file:
+[180521-154017] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180521-154017] INFO:   start:2018-05-21 19:40:20
+[180521-154017] INFO:   end:  2018-05-21 19:40:35
+[180521-154017] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180521-154017] INFO:   start:2018-05-21 19:40:42
+[180521-154017] INFO:   end:  2018-05-21 19:40:49
+[180521-154017] INFO: Scheduling task: capture at 2018-05-21 19:40:20
+[180521-154017] INFO: Scheduled task: capture at 2018-05-21 19:40:20
+[180521-154017] INFO: Scheduling task: capture at 2018-05-21 19:40:42
+[180521-154017] INFO: Scheduled task: capture at 2018-05-21 19:40:42
+[180521-154017] INFO: Finished scheduling capturing...
+[180521-154017] INFO: Serving POST on port 8000...
+[180521-154020] INFO: Initializing task: capture
+[180521-154020] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180521-154020] INFO: Loading all Conf...
+[180521-154020] INFO: Checking Config
+[180521-154020] INFO: Config validation returns True
+[180521-154020] INFO: Preparing saving path...
+[180521-154020] INFO: Saving to /home/will1512/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--19-40-20/
+[180521-154020] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180521-154020] INFO: Loading all Conf...
+[180521-154020] INFO: Triggerring video0
+[180521-154020] INFO: Triggerring video1
+[180521-154020] INFO:  LECTURE
+[180521-154036] INFO: ==>Capturing successful, uploading all lectures
+[180521-154036] INFO: ==>Uploading...
+[180521-154036] INFO: ==>Return code: 127
+[180521-154036] INFO: Task capture Done.
+[180521-154036] INFO: Finishing task: capture
+[180521-154042] INFO: Initializing task: capture
+[180521-154042] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180521-154042] INFO: Loading all Conf...
+[180521-154042] INFO: Checking Config
+[180521-154042] INFO: Config validation returns True
+[180521-154042] INFO: Preparing saving path...
+[180521-154042] INFO: Saving to /home/will1512/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--19-40-42/
+[180521-154042] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180521-154042] INFO: Loading all Conf...
+[180521-154042] INFO: Triggerring video0
+[180521-154042] INFO: Triggerring video1
+[180521-154042] INFO:  LECTURE
+[180521-154050] INFO: ==>Capturing successful, uploading all lectures
+[180521-154050] INFO: ==>Uploading...
+[180521-154050] INFO: ==>Return code: 127
+[180521-154050] INFO: Task capture Done.
+[180521-154050] INFO: Finishing task: capture
