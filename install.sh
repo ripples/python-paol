@@ -1,5 +1,5 @@
 apt install python3-pip -y
-apt-get install python3-pil python3-pil.imagetk =y
+apt-get install python3-pil python3-pil.imagetk -y
 
 pip3 install icalendar imutils Pillow scikit-image
 
