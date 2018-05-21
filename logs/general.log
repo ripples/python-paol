@@ -687,3 +687,153 @@
 [180521-154050] INFO: ==>Return code: 127
 [180521-154050] INFO: Task capture Done.
 [180521-154050] INFO: Finishing task: capture
+[180521-154352] INFO: Starting scheduling capturing...
+[180521-154352] INFO: LOADING GCAL from CalendarTest.ics
+[180521-154352] INFO: LOADING Successful.
+[180521-154352] INFO: EVENT list of ICS file:
+[180521-154352] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180521-154352] INFO:   start:2018-05-21 19:43:55
+[180521-154352] INFO:   end:  2018-05-21 19:44:10
+[180521-154352] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180521-154352] INFO:   start:2018-05-21 19:44:17
+[180521-154352] INFO:   end:  2018-05-21 19:44:24
+[180521-154352] INFO: Scheduling task: capture at 2018-05-21 19:43:55
+[180521-154352] INFO: Scheduled task: capture at 2018-05-21 19:43:55
+[180521-154352] INFO: Scheduling task: capture at 2018-05-21 19:44:17
+[180521-154352] INFO: Scheduled task: capture at 2018-05-21 19:44:17
+[180521-154352] INFO: Finished scheduling capturing...
+[180521-154352] INFO: Serving POST on port 8000...
+[180521-154355] INFO: Initializing task: capture
+[180521-154355] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180521-154355] INFO: Loading all Conf...
+[180521-154355] INFO: Checking Config
+[180521-154355] INFO: Config validation returns True
+[180521-154355] INFO: Preparing saving path...
+[180521-154355] INFO: Saving to /home/will1512/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--19-43-55/
+[180521-154355] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180521-154355] INFO: Loading all Conf...
+[180521-154355] INFO: Triggerring video1
+[180521-154355] INFO:  LECTURE
+[180521-154355] INFO: Triggerring video0
+[180521-154411] INFO: ==>Capturing successful, uploading all lectures
+[180521-154411] INFO: ==>Uploading...
+[180521-154411] INFO: ==>Return code: 127
+[180521-154411] INFO: Task capture Done.
+[180521-154411] INFO: Finishing task: capture
+[180521-154417] INFO: Initializing task: capture
+[180521-154417] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180521-154417] INFO: Loading all Conf...
+[180521-154417] INFO: Checking Config
+[180521-154417] INFO: Config validation returns True
+[180521-154417] INFO: Preparing saving path...
+[180521-154417] INFO: Saving to /home/will1512/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--19-44-17/
+[180521-154417] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180521-154417] INFO: Loading all Conf...
+[180521-154417] INFO: Triggerring video1
+[180521-154417] INFO:  LECTURE
+[180521-154417] INFO: Triggerring video0
+[180521-154425] INFO: ==>Capturing successful, uploading all lectures
+[180521-154425] INFO: ==>Uploading...
+[180521-154425] INFO: ==>Return code: 127
+[180521-154425] INFO: Task capture Done.
+[180521-154425] INFO: Finishing task: capture
+[180521-154552] INFO: Starting scheduling capturing...
+[180521-154552] INFO: LOADING GCAL from CalendarTest.ics
+[180521-154552] INFO: LOADING Successful.
+[180521-154552] INFO: EVENT list of ICS file:
+[180521-154552] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180521-154552] INFO:   start:2018-05-21 19:45:55
+[180521-154552] INFO:   end:  2018-05-21 19:46:10
+[180521-154552] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180521-154552] INFO:   start:2018-05-21 19:46:17
+[180521-154552] INFO:   end:  2018-05-21 19:46:24
+[180521-154552] INFO: Scheduling task: capture at 2018-05-21 19:45:55
+[180521-154552] INFO: Scheduled task: capture at 2018-05-21 19:45:55
+[180521-154552] INFO: Scheduling task: capture at 2018-05-21 19:46:17
+[180521-154552] INFO: Scheduled task: capture at 2018-05-21 19:46:17
+[180521-154552] INFO: Finished scheduling capturing...
+[180521-154552] INFO: Serving POST on port 8000...
+[180521-154555] INFO: Initializing task: capture
+[180521-154555] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180521-154555] INFO: Loading all Conf...
+[180521-154555] INFO: Checking Config
+[180521-154555] INFO: Config validation returns True
+[180521-154555] INFO: Preparing saving path...
+[180521-154555] INFO: Saving to /home/will1512/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--19-45-55/
+[180521-154555] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180521-154555] INFO: Loading all Conf...
+[180521-154555] INFO: Triggerring video0
+[180521-154555] INFO: Triggerring video1
+[180521-154555] INFO:  LECTURE
+[180521-154611] INFO: ==>Capturing successful, uploading all lectures
+[180521-154611] INFO: ==>Uploading...
+[180521-154611] INFO: ==>Return code: 127
+[180521-154611] INFO: Task capture Done.
+[180521-154611] INFO: Finishing task: capture
+[180521-154617] INFO: Initializing task: capture
+[180521-154617] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180521-154617] INFO: Loading all Conf...
+[180521-154617] INFO: Checking Config
+[180521-154617] INFO: Config validation returns True
+[180521-154617] INFO: Preparing saving path...
+[180521-154617] INFO: Saving to /home/will1512/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--19-46-17/
+[180521-154617] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180521-154617] INFO: Loading all Conf...
+[180521-154617] INFO: Triggerring video0
+[180521-154617] INFO: Triggerring video1
+[180521-154617] INFO:  LECTURE
+[180521-154625] INFO: ==>Capturing successful, uploading all lectures
+[180521-154625] INFO: ==>Uploading...
+[180521-154625] INFO: ==>Return code: 127
+[180521-154625] INFO: Task capture Done.
+[180521-154625] INFO: Finishing task: capture
+[180521-155333] INFO: Starting scheduling capturing...
+[180521-155333] INFO: LOADING GCAL from CalendarTest.ics
+[180521-155333] INFO: LOADING Successful.
+[180521-155333] INFO: EVENT list of ICS file:
+[180521-155333] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180521-155333] INFO:   start:2018-05-21 19:53:36
+[180521-155333] INFO:   end:  2018-05-21 19:53:51
+[180521-155333] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180521-155333] INFO:   start:2018-05-21 19:53:58
+[180521-155333] INFO:   end:  2018-05-21 19:54:05
+[180521-155333] INFO: Scheduling task: capture at 2018-05-21 19:53:36
+[180521-155333] INFO: Scheduled task: capture at 2018-05-21 19:53:36
+[180521-155333] INFO: Scheduling task: capture at 2018-05-21 19:53:58
+[180521-155333] INFO: Scheduled task: capture at 2018-05-21 19:53:58
+[180521-155333] INFO: Finished scheduling capturing...
+[180521-155333] INFO: Serving POST on port 8000...
+[180521-155336] INFO: Initializing task: capture
+[180521-155336] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180521-155336] INFO: Loading all Conf...
+[180521-155336] INFO: Checking Config
+[180521-155336] INFO: Config validation returns True
+[180521-155336] INFO: Preparing saving path...
+[180521-155336] INFO: Saving to /home/will1512/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--19-53-36/
+[180521-155336] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180521-155336] INFO: Loading all Conf...
+[180521-155336] INFO: Triggerring video1
+[180521-155336] INFO:  LECTURE
+[180521-155336] INFO: Triggerring video0
+[180521-155352] INFO: ==>Capturing successful, uploading all lectures
+[180521-155352] INFO: ==>Uploading...
+[180521-155352] INFO: ==>Return code: 127
+[180521-155352] INFO: Task capture Done.
+[180521-155352] INFO: Finishing task: capture
+[180521-155358] INFO: Initializing task: capture
+[180521-155358] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180521-155358] INFO: Loading all Conf...
+[180521-155358] INFO: Checking Config
+[180521-155358] INFO: Config validation returns True
+[180521-155358] INFO: Preparing saving path...
+[180521-155358] INFO: Saving to /home/will1512/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--19-53-58/
+[180521-155358] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180521-155358] INFO: Loading all Conf...
+[180521-155358] INFO: Triggerring video1
+[180521-155358] INFO:  LECTURE
+[180521-155358] INFO: Triggerring video0
+[180521-155406] INFO: ==>Capturing successful, uploading all lectures
+[180521-155406] INFO: ==>Uploading...
+[180521-155406] INFO: ==>Return code: 127
+[180521-155406] INFO: Task capture Done.
+[180521-155406] INFO: Finishing task: capture
