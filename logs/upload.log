@@ -1,0 +1,402 @@
+Uploading readyToUpload lectures
+Semester:	SPRING18
+>Course:	PAOL_001232_FA17_CNAC
+>>Lecture:	05-22-18--20-31-48
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-31-48.zip
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-32-10
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-32-10.zip
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-35-41
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-35-41.zip
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-36-03
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-36-03.zip
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-44-44
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-44-44.zip
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-45-06
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-45-06.zip
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-48-28
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+>>Lecture:	05-22-18--20-48-50
+./scripts/uploadAll.sh: 12: ./scripts/uploadAll.sh: ./uploadcurl.sh: not found
+
+Uploading readyToUpload lectures
+Semester:	SPRING18
+>Course:	PAOL_001232_FA17_CNAC
+>>Lecture:	05-22-18--20-31-48
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-31-48
+updating: 05-22-18--20-31-48/ (stored 0%)
+updating: 05-22-18--20-31-48/videoLarge.mp4 (deflated 70%)
+updating: 05-22-18--20-31-48/whiteboard/ (stored 0%)
+updating: 05-22-18--20-31-48/whiteboard/1527035508.png (deflated 5%)
+updating: 05-22-18--20-31-48/INFO (deflated 14%)
+updating: 05-22-18--20-31-48/computer/ (stored 0%)
+updating: 05-22-18--20-31-48/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-31-48.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-31-48.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-31-48.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-31-48.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-32-10
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-32-10
+updating: 05-22-18--20-32-10/ (stored 0%)
+updating: 05-22-18--20-32-10/videoLarge.mp4 (deflated 69%)
+updating: 05-22-18--20-32-10/whiteboard/ (stored 0%)
+updating: 05-22-18--20-32-10/whiteboard/1527035530.png (deflated 6%)
+updating: 05-22-18--20-32-10/INFO (deflated 13%)
+updating: 05-22-18--20-32-10/computer/ (stored 0%)
+updating: 05-22-18--20-32-10/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-32-10.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-32-10.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-32-10.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-32-10.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-35-41
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-35-41
+updating: 05-22-18--20-35-41/ (stored 0%)
+updating: 05-22-18--20-35-41/videoLarge.mp4 (deflated 69%)
+updating: 05-22-18--20-35-41/whiteboard/ (stored 0%)
+updating: 05-22-18--20-35-41/whiteboard/1527035741.png (deflated 5%)
+updating: 05-22-18--20-35-41/INFO (deflated 14%)
+updating: 05-22-18--20-35-41/computer/ (stored 0%)
+updating: 05-22-18--20-35-41/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-35-41.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-35-41.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-35-41.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-35-41.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-36-03
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-36-03
+updating: 05-22-18--20-36-03/ (stored 0%)
+updating: 05-22-18--20-36-03/videoLarge.mp4 (deflated 69%)
+updating: 05-22-18--20-36-03/whiteboard/ (stored 0%)
+updating: 05-22-18--20-36-03/whiteboard/1527035763.png (deflated 6%)
+updating: 05-22-18--20-36-03/INFO (deflated 14%)
+updating: 05-22-18--20-36-03/computer/ (stored 0%)
+updating: 05-22-18--20-36-03/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-36-03.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-36-03.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-36-03.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-36-03.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-44-44
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-44-44
+updating: 05-22-18--20-44-44/ (stored 0%)
+updating: 05-22-18--20-44-44/videoLarge.mp4 (deflated 70%)
+updating: 05-22-18--20-44-44/whiteboard/ (stored 0%)
+updating: 05-22-18--20-44-44/whiteboard/1527036284.png (deflated 6%)
+updating: 05-22-18--20-44-44/INFO (deflated 14%)
+updating: 05-22-18--20-44-44/computer/ (stored 0%)
+updating: 05-22-18--20-44-44/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-44-44.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-44-44.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-44-44.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-44-44.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-45-06
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-45-06
+updating: 05-22-18--20-45-06/ (stored 0%)
+updating: 05-22-18--20-45-06/videoLarge.mp4 (deflated 70%)
+updating: 05-22-18--20-45-06/whiteboard/ (stored 0%)
+updating: 05-22-18--20-45-06/whiteboard/1527036306.png (deflated 5%)
+updating: 05-22-18--20-45-06/INFO (deflated 13%)
+updating: 05-22-18--20-45-06/computer/ (stored 0%)
+updating: 05-22-18--20-45-06/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-45-06.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-45-06.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-45-06.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-45-06.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-48-28
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-28
+  adding: 05-22-18--20-48-28/ (stored 0%)
+  adding: 05-22-18--20-48-28/videoLarge.mp4 (deflated 70%)
+  adding: 05-22-18--20-48-28/whiteboard/ (stored 0%)
+  adding: 05-22-18--20-48-28/whiteboard/1527036508.png (deflated 6%)
+  adding: 05-22-18--20-48-28/INFO (deflated 14%)
+  adding: 05-22-18--20-48-28/computer/ (stored 0%)
+  adding: 05-22-18--20-48-28/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-28.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-28.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-48-50
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-50
+  adding: 05-22-18--20-48-50/ (stored 0%)
+  adding: 05-22-18--20-48-50/videoLarge.mp4 (deflated 69%)
+  adding: 05-22-18--20-48-50/whiteboard/ (stored 0%)
+  adding: 05-22-18--20-48-50/whiteboard/1527036530.png (deflated 6%)
+  adding: 05-22-18--20-48-50/INFO (deflated 14%)
+  adding: 05-22-18--20-48-50/computer/ (stored 0%)
+  adding: 05-22-18--20-48-50/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-50.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-50.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-52-19
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-19
+  adding: 05-22-18--20-52-19/ (stored 0%)
+  adding: 05-22-18--20-52-19/videoLarge.mp4
+	zip warning:  file size changed while zipping 05-22-18--20-52-19/videoLarge.mp4
+ (deflated 69%)
+  adding: 05-22-18--20-52-19/whiteboard/ (stored 0%)
+  adding: 05-22-18--20-52-19/whiteboard/1527036739.png (deflated 5%)
+  adding: 05-22-18--20-52-19/INFO (deflated 13%)
+  adding: 05-22-18--20-52-19/computer/ (stored 0%)
+  adding: 05-22-18--20-52-19/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-19.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-19.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+Uploading readyToUpload lectures
+Semester:	SPRING18
+>Course:	PAOL_001232_FA17_CNAC
+>>Lecture:	05-22-18--20-31-48
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-31-48
+updating: 05-22-18--20-31-48/ (stored 0%)
+updating: 05-22-18--20-31-48/videoLarge.mp4 (deflated 70%)
+updating: 05-22-18--20-31-48/whiteboard/ (stored 0%)
+updating: 05-22-18--20-31-48/whiteboard/1527035508.png (deflated 5%)
+updating: 05-22-18--20-31-48/INFO (deflated 14%)
+updating: 05-22-18--20-31-48/computer/ (stored 0%)
+updating: 05-22-18--20-31-48/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-31-48.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-31-48.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-31-48.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-31-48.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-32-10
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-32-10
+updating: 05-22-18--20-32-10/ (stored 0%)
+updating: 05-22-18--20-32-10/videoLarge.mp4 (deflated 69%)
+updating: 05-22-18--20-32-10/whiteboard/ (stored 0%)
+updating: 05-22-18--20-32-10/whiteboard/1527035530.png (deflated 6%)
+updating: 05-22-18--20-32-10/INFO (deflated 13%)
+updating: 05-22-18--20-32-10/computer/ (stored 0%)
+updating: 05-22-18--20-32-10/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-32-10.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-32-10.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-32-10.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-32-10.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-35-41
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-35-41
+updating: 05-22-18--20-35-41/ (stored 0%)
+updating: 05-22-18--20-35-41/videoLarge.mp4 (deflated 69%)
+updating: 05-22-18--20-35-41/whiteboard/ (stored 0%)
+updating: 05-22-18--20-35-41/whiteboard/1527035741.png (deflated 5%)
+updating: 05-22-18--20-35-41/INFO (deflated 14%)
+updating: 05-22-18--20-35-41/computer/ (stored 0%)
+updating: 05-22-18--20-35-41/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-35-41.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-35-41.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-35-41.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-35-41.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-36-03
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-36-03
+updating: 05-22-18--20-36-03/ (stored 0%)
+updating: 05-22-18--20-36-03/videoLarge.mp4 (deflated 69%)
+updating: 05-22-18--20-36-03/whiteboard/ (stored 0%)
+updating: 05-22-18--20-36-03/whiteboard/1527035763.png (deflated 6%)
+updating: 05-22-18--20-36-03/INFO (deflated 14%)
+updating: 05-22-18--20-36-03/computer/ (stored 0%)
+updating: 05-22-18--20-36-03/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-36-03.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-36-03.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-36-03.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-36-03.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-44-44
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-44-44
+updating: 05-22-18--20-44-44/ (stored 0%)
+updating: 05-22-18--20-44-44/videoLarge.mp4 (deflated 70%)
+updating: 05-22-18--20-44-44/whiteboard/ (stored 0%)
+updating: 05-22-18--20-44-44/whiteboard/1527036284.png (deflated 6%)
+updating: 05-22-18--20-44-44/INFO (deflated 14%)
+updating: 05-22-18--20-44-44/computer/ (stored 0%)
+updating: 05-22-18--20-44-44/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-44-44.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-44-44.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-44-44.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-44-44.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-45-06
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-45-06
+updating: 05-22-18--20-45-06/ (stored 0%)
+updating: 05-22-18--20-45-06/videoLarge.mp4 (deflated 70%)
+updating: 05-22-18--20-45-06/whiteboard/ (stored 0%)
+updating: 05-22-18--20-45-06/whiteboard/1527036306.png (deflated 5%)
+updating: 05-22-18--20-45-06/INFO (deflated 13%)
+updating: 05-22-18--20-45-06/computer/ (stored 0%)
+updating: 05-22-18--20-45-06/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-45-06.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-45-06.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-45-06.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-45-06.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-48-28
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-28
+updating: 05-22-18--20-48-28/ (stored 0%)
+updating: 05-22-18--20-48-28/videoLarge.mp4 (deflated 70%)
+updating: 05-22-18--20-48-28/whiteboard/ (stored 0%)
+updating: 05-22-18--20-48-28/whiteboard/1527036508.png (deflated 6%)
+updating: 05-22-18--20-48-28/INFO (deflated 14%)
+updating: 05-22-18--20-48-28/computer/ (stored 0%)
+updating: 05-22-18--20-48-28/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-28.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-28.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-48-28.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-28.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-48-50
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-50
+updating: 05-22-18--20-48-50/ (stored 0%)
+updating: 05-22-18--20-48-50/videoLarge.mp4 (deflated 69%)
+updating: 05-22-18--20-48-50/whiteboard/ (stored 0%)
+updating: 05-22-18--20-48-50/whiteboard/1527036530.png (deflated 6%)
+updating: 05-22-18--20-48-50/INFO (deflated 14%)
+updating: 05-22-18--20-48-50/computer/ (stored 0%)
+updating: 05-22-18--20-48-50/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-50.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-50.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-48-50.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-48-50.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-52-19
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-19
+updating: 05-22-18--20-52-19/ (stored 0%)
+updating: 05-22-18--20-52-19/videoLarge.mp4 (deflated 70%)
+updating: 05-22-18--20-52-19/whiteboard/ (stored 0%)
+updating: 05-22-18--20-52-19/whiteboard/1527036739.png (deflated 5%)
+updating: 05-22-18--20-52-19/INFO (deflated 13%)
+updating: 05-22-18--20-52-19/computer/ (stored 0%)
+updating: 05-22-18--20-52-19/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-19.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-19.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+
+>>Lecture:	05-22-18--20-52-19.zip
+/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-19.zip is Not a Directory.
+
+>>Lecture:	05-22-18--20-52-41
+Uploading Lecture in /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-41
+  adding: 05-22-18--20-52-41/ (stored 0%)
+  adding: 05-22-18--20-52-41/videoLarge.mp4 (deflated 69%)
+  adding: 05-22-18--20-52-41/whiteboard/ (stored 0%)
+  adding: 05-22-18--20-52-41/whiteboard/1527036761.png (deflated 6%)
+  adding: 05-22-18--20-52-41/INFO (deflated 14%)
+  adding: 05-22-18--20-52-41/computer/ (stored 0%)
+  adding: 05-22-18--20-52-41/blackboard/ (stored 0%)
+Uploading zip /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-41.zip in course PAOL_001232_FA17_CNAC to present.cs.umass.edu
+curl -X POST present.cs.umass.edu:8080/upload/PAOL_001232_FA17_CNAC/lecture-zip -H 'cache-control: no-cache' -F 'file=@/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-41.zip'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to present.cs.umass.edu port 8080: Connection refused
+Upload Failed
+

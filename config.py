@@ -31,6 +31,7 @@ def load_all_config():
         return None if no conf file is found
         return None if no conf entries is found
     '''
+    os.chdir(os.path.dirname(__file__))
     utils.log('INFO', 'Loading all Conf...')
     j_file = None
     try:
@@ -50,6 +51,7 @@ def load_all_config():
 
 def is_config_valid():
     '''Check if not all NOT_SET or out-dated'''
+    os.chdir(os.path.dirname(__file__))
     utils.log('INFO', 'Checking Config')
     j_file = None
     try:
@@ -87,6 +89,7 @@ def load_config(key):
         return None if no conf file is found
         return None if no conf entries is found
     '''
+    os.chdir(os.path.dirname(__file__))
     utils.log('INFO', 'Loading Conf...')
     j_file = None
     try:
@@ -106,6 +109,7 @@ def load_config(key):
 
 def add_config(jdict):
     '''Add entries in @jdict to @CONFSRC'''
+    os.chdir(os.path.dirname(__file__))
     with open(CONFSRC, 'w+') as f:
         j_data = json.load(f)
         j_data.update(jdict)
@@ -114,5 +118,6 @@ def add_config(jdict):
 
 def write_config(jdict):
     '''Write entries in @jdict to @CONFSRC'''
+    os.chdir(os.path.dirname(__file__))
     with open(CONFSRC, 'w+') as f:
         json.dump(jdict, f)
