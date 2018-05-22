@@ -1109,3 +1109,74 @@
 [180522-165249] INFO: Return code: 0
 [180522-165249] INFO: Task capture Done.
 [180522-165249] INFO: Finishing task: capture
+[180522-170141] INFO: Starting scheduling capturing...
+[180522-170141] INFO: LOADING GCAL from CalendarTest.ics
+[180522-170141] INFO: LOADING Successful.
+[180522-170141] INFO: EVENT list of ICS file:
+[180522-170141] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180522-170141] INFO:   start:2018-05-22 21:01:44
+[180522-170141] INFO:   end:  2018-05-22 21:01:59
+[180522-170141] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180522-170141] INFO:   start:2018-05-22 21:02:06
+[180522-170141] INFO:   end:  2018-05-22 21:02:13
+[180522-170141] INFO: Scheduling task: capture at 2018-05-22 21:01:44
+[180522-170141] INFO: Scheduled task: capture at 2018-05-22 21:01:44
+[180522-170141] INFO: Scheduling task: capture at 2018-05-22 21:02:06
+[180522-170141] INFO: Scheduled task: capture at 2018-05-22 21:02:06
+[180522-170141] INFO: Finished scheduling capturing...
+[180522-170141] INFO: Serving POST on port 8000...
+[180522-170144] INFO: Initializing task: capture
+[180522-170144] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180522-170144] INFO: Loading all Conf...
+[180522-170206] INFO: Initializing task: capture
+[180522-170206] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180522-170206] INFO: Loading all Conf...
+[180522-170512] INFO: Searching for available video devices...
+[180522-170512] INFO: Found 2 video devices:
+[180522-170512] INFO:  video0
+[180522-170512] INFO:  video1
+[180522-170512] INFO: Config updated:
+[180522-170512] INFO: video0 caps WHITEBOARD
+[180522-170512] INFO: Config updated:
+[180522-170512] INFO: video0 caps WHITEBOARD
+[180522-170512] INFO: video1 caps WHITEBOARD
+[180522-170518] INFO: Config updated:
+[180522-170518] INFO: video0 caps WHITEBOARD
+[180522-170518] INFO: video1 caps LECTURE(w/ AUDIO)
+[180522-170519] INFO: Closing SETUP Window...
+[180522-170520] WARN: RuntimeError on GUI.
+[180522-170520] INFO: Check logs/gui_err.log for details.
+[180522-170531] INFO: Starting scheduling capturing...
+[180522-170531] INFO: LOADING GCAL from CalendarTest.ics
+[180522-170531] INFO: LOADING Successful.
+[180522-170531] INFO: EVENT list of ICS file:
+[180522-170531] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180522-170531] INFO:   start:2018-05-22 21:05:34
+[180522-170531] INFO:   end:  2018-05-22 21:05:49
+[180522-170531] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180522-170531] INFO:   start:2018-05-22 21:05:56
+[180522-170531] INFO:   end:  2018-05-22 21:06:03
+[180522-170531] INFO: Scheduling task: capture at 2018-05-22 21:05:34
+[180522-170531] INFO: Scheduled task: capture at 2018-05-22 21:05:34
+[180522-170531] INFO: Scheduling task: capture at 2018-05-22 21:05:56
+[180522-170531] INFO: Scheduled task: capture at 2018-05-22 21:05:56
+[180522-170531] INFO: Finished scheduling capturing...
+[180522-170531] INFO: Serving POST on port 8000...
+[180522-170534] INFO: Initializing task: capture
+[180522-170534] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180522-170534] INFO: Loading all Conf...
+[180522-170534] INFO: Checking Config
+[180522-170534] INFO: Config validation returns True
+[180522-170534] INFO: Preparing saving path...
+[180522-170534] INFO: Saving to /home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--21-05-34/
+[180522-170534] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180522-170534] INFO: Loading all Conf...
+[180522-170534] INFO: Triggerring video0
+[180522-170534] INFO:  WHITEBOARD
+[180522-170534] INFO: Triggerring video1
+[180522-170534] INFO:  LECTURE
+[180522-170550] INFO: Capturing successful, uploading all lectures
+[180522-170550] INFO: Uploading...
+[180522-170550] INFO: Return code: 0
+[180522-170550] INFO: Task capture Done.
+[180522-170550] INFO: Finishing task: capture

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ffmpeg version 1.2 Copyright (c) 2000-2013 the FFmpeg developers
   built on Oct  3 2013 15:56:35 with gcc 4.6 (Ubuntu/Linaro 4.6.3-1ubuntu5)
   configuration: --prefix=/home/paol/ffmpeg_build --extra-cflags=-I/home/paol/ffmpeg_build/include --extra-ldflags=-L/home/paol/ffmpeg_build/lib --bindir=/usr/local/bin --extra-libs=-ldl --enable-gpl --enable-libvorbis --enable-libvpx --enable-libx264 --enable-nonfree --enable-libfdk-aac
@@ -10,20 +9,20 @@ ffmpeg version 1.2 Copyright (c) 2000-2013 the FFmpeg developers
   libswscale      2.  2.100 /  2.  2.100
   libswresample   0. 17.102 /  0. 17.102
   libpostproc    52.  2.100 / 52.  2.100
-[alsa @ 0x2692520] Estimating duration from bitrate, this may be inaccurate
+[alsa @ 0x2102760] Estimating duration from bitrate, this may be inaccurate
 Guessed Channel Layout for  Input Stream #0.0 : stereo
 Input #0, alsa, from 'default':
-  Duration: N/A, start: 1527022361.039719, bitrate: 1536 kb/s
+  Duration: N/A, start: 1527023134.042643, bitrate: 1536 kb/s
     Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
-[video4linux2,v4l2 @ 0x26b9ec0] The driver changed the time per frame from 1/25 to 1/24
-[video4linux2,v4l2 @ 0x26b9ec0] Estimating duration from bitrate, this may be inaccurate
+[video4linux2,v4l2 @ 0x212a4c0] The driver changed the time per frame from 1/25 to 1/24
+[video4linux2,v4l2 @ 0x212a4c0] Estimating duration from bitrate, this may be inaccurate
 Input #1, video4linux2,v4l2, from '/dev/video1':
-  Duration: N/A, start: 5078.591760, bitrate: 117964 kb/s
+  Duration: N/A, start: 5851.587577, bitrate: 117964 kb/s
     Stream #1:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x480, 117964 kb/s, 24 fps, 24 tbr, 1000k tbn, 1000k tbc
-[libx264 @ 0x26bbb00] using cpu capabilities: none!
-[libx264 @ 0x26bbb00] profile High 4:2:2, level 3.0, 4:2:2 8-bit
-[libx264 @ 0x26bbb00] 264 - core 135 r2 f0c1c53 - H.264/MPEG-4 AVC codec - Copyleft 2003-2013 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-Output #0, mp4, to '/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--20-52-41/videoLarge.mp4':
+[libx264 @ 0x212c0e0] using cpu capabilities: none!
+[libx264 @ 0x212c0e0] profile High 4:2:2, level 3.0, 4:2:2 8-bit
+[libx264 @ 0x212c0e0] 264 - core 135 r2 f0c1c53 - H.264/MPEG-4 AVC codec - Copyleft 2003-2013 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/home/paol/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-22-18--21-05-34/videoLarge.mp4':
   Metadata:
     encoder         : Lavf54.63.104
     Stream #0:0: Video: h264 ([33][0][0][0] / 0x0021), yuv422p, 640x480, q=-1--1, 12800 tbn, 25 tbc
@@ -32,51 +31,23 @@ Stream mapping:
   Stream #1:0 -> #0:0 (rawvideo -> libx264)
   Stream #0:0 -> #0:1 (pcm_s16le -> libfdk_aac)
 Press [q] to stop, [?] for help
-frame=   13 fps=0.0 q=0.0 size=       0kB time=00:00:00.74 bitrate=   0.5kbits/s    frame=   25 fps= 25 q=0.0 size=       0kB time=00:00:01.23 bitrate=   0.3kbits/s    frame=   37 fps= 24 q=0.0 size=       0kB time=00:00:01.74 bitrate=   0.2kbits/s    frame=   49 fps= 24 q=0.0 size=       0kB time=00:00:02.26 bitrate=   0.2kbits/s    frame=   61 fps= 24 q=0.0 size=       0kB time=00:00:02.75 bitrate=   0.1kbits/s    frame=   73 fps= 24 q=28.0 size=      25kB time=00:00:03.26 bitrate=  62.2kbits/s    frame=   86 fps= 24 q=28.0 size=      37kB time=00:00:03.77 bitrate=  80.5kbits/s    frame=   98 fps= 24 q=28.0 size=      48kB time=00:00:04.26 bitrate=  92.0kbits/s    frame=  110 fps= 24 q=28.0 size=      59kB time=00:00:04.77 bitrate= 101.2kbits/s    frame=  122 fps= 24 q=28.0 size=      70kB time=00:00:05.26 bitrate= 108.1kbits/s    frame=  134 fps= 24 q=28.0 size=      81kB time=00:00:05.78 bitrate= 114.1kbits/s    frame=  146 fps= 24 q=28.0 size=      91kB time=00:00:06.27 bitrate= 118.8kbits/s    frame=  158 fps= 24 q=28.0 size=     101kB time=00:00:06.78 bitrate= 122.5kbits/s    frame=  170 fps= 24 q=28.0 size=     112kB time=00:00:04.24 bitrate= 216.0kbits/s    frame=  175 fps= 22 q=32766.0 Lsize=     180kB time=00:00:07.01 bitrate= 209.8kbits/s    
-video:51kB audio:120kB subtitle:0 global headers:0kB muxing overhead 5.069311%
-[libx264 @ 0x26bbb00] frame I:1     Avg QP:23.00  size: 12035
-[libx264 @ 0x26bbb00] frame P:44    Avg QP:21.87  size:   532
-[libx264 @ 0x26bbb00] frame B:130   Avg QP:22.84  size:   121
-[libx264 @ 0x26bbb00] consecutive B-frames:  0.6%  1.1%  0.0% 98.3%
-[libx264 @ 0x26bbb00] mb I  I16..4: 46.7% 28.1% 25.2%
-[libx264 @ 0x26bbb00] mb P  I16..4:  0.3%  0.0%  0.0%  P16..4: 14.1%  0.4%  1.7%  0.0%  0.0%    skip:83.5%
-[libx264 @ 0x26bbb00] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  5.8%  0.0%  0.0%  direct: 0.0%  skip:94.1%  L0:37.3% L1:62.7% BI: 0.0%
-[libx264 @ 0x26bbb00] 8x8 transform intra:25.1% inter:90.4%
-[libx264 @ 0x26bbb00] coded y,uvDC,uvAC intra: 34.5% 41.8% 17.6% inter: 0.2% 4.3% 0.1%
-[libx264 @ 0x26bbb00] i16 v,h,dc,p:  1% 63%  2% 34%
-[libx264 @ 0x26bbb00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  7% 47% 25%  3%  4%  2%  6%  2%  5%
-[libx264 @ 0x26bbb00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 14% 57%  9%  2%  3%  2%  5%  3%  4%
-[libx264 @ 0x26bbb00] i8c dc,h,v,p: 62% 23% 13%  2%
-[libx264 @ 0x26bbb00] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x26bbb00] ref P L0: 66.4%  1.2% 22.1% 10.2%
-[libx264 @ 0x26bbb00] ref B L0: 76.9% 22.2%  0.9%
-[libx264 @ 0x26bbb00] ref B L1: 94.5%  5.5%
-[libx264 @ 0x26bbb00] kb/s:58.48
-=======
-ffmpeg version 2.8.14-0ubuntu0.16.04.1 Copyright (c) 2000-2018 the FFmpeg developers
-  built with gcc 5.4.0 (Ubuntu 5.4.0-6ubuntu1~16.04.9) 20160609
-  configuration: --prefix=/usr --extra-version=0ubuntu0.16.04.1 --build-suffix=-ffmpeg --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --cc=cc --cxx=g++ --enable-gpl --enable-shared --disable-stripping --disable-decoder=libopenjpeg --disable-decoder=libschroedinger --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmodplug --enable-libmp3lame --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-librtmp --enable-libschroedinger --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxvid --enable-libzvbi --enable-openal --enable-opengl --enable-x11grab --enable-libdc1394 --enable-libiec61883 --enable-libzmq --enable-frei0r --enable-libx264 --enable-libopencv
-  libavutil      54. 31.100 / 54. 31.100
-  libavcodec     56. 60.100 / 56. 60.100
-  libavformat    56. 40.101 / 56. 40.101
-  libavdevice    56.  4.100 / 56.  4.100
-  libavfilter     5. 40.101 /  5. 40.101
-  libavresample   2.  1.  0 /  2.  1.  0
-  libswscale      3.  1.101 /  3.  1.101
-  libswresample   1.  2.101 /  1.  2.101
-  libpostproc    53.  3.100 / 53.  3.100
-Guessed Channel Layout for  Input Stream #0.0 : stereo
-Input #0, alsa, from 'default':
-  Duration: N/A, start: 1526932438.061576, bitrate: 1536 kb/s
-    Stream #0:0: Audio: pcm_s16le, 48000 Hz, 2 channels, s16, 1536 kb/s
-[video4linux2,v4l2 @ 0xe51c00] The driver changed the time per frame from 1/25 to 1/24
-Input #1, video4linux2,v4l2, from '/dev/video1':
-  Duration: N/A, start: 3859.107723, bitrate: 117964 kb/s
-    Stream #1:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x480, 117964 kb/s, 24 fps, 24 tbr, 1000k tbn, 1000k tbc
-No pixel format specified, yuv422p for H.264 encoding chosen.
-Use -pix_fmt yuv420p for compatibility with outdated media players.
-[libx264 @ 0xe54680] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
-[libx264 @ 0xe54680] profile High 4:2:2, level 3.0, 4:2:2 8-bit
-[libx264 @ 0xe54680] 264 - core 148 r2643 5c65704 - H.264/MPEG-4 AVC codec - Copyleft 2003-2015 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-[aac @ 0xe569a0] The encoder 'aac' is experimental but experimental codecs are not enabled, add '-strict -2' if you want to use it.
->>>>>>> 27eb8d3a6c34ee49a7f52ea4355e1b8e6264d72a
+frame=   13 fps=0.0 q=0.0 size=       0kB time=00:00:00.74 bitrate=   0.5kbits/s    frame=   25 fps= 24 q=0.0 size=       0kB time=00:00:01.23 bitrate=   0.3kbits/s    frame=   37 fps= 24 q=0.0 size=       0kB time=00:00:01.74 bitrate=   0.2kbits/s    frame=   49 fps= 24 q=0.0 size=       0kB time=00:00:02.23 bitrate=   0.2kbits/s    frame=   62 fps= 24 q=0.0 size=       0kB time=00:00:02.75 bitrate=   0.1kbits/s    frame=   74 fps= 24 q=28.0 size=      25kB time=00:00:03.26 bitrate=  63.7kbits/s    frame=   86 fps= 24 q=28.0 size=      37kB time=00:00:03.75 bitrate=  81.3kbits/s    frame=   98 fps= 24 q=28.0 size=      49kB time=00:00:04.24 bitrate=  93.7kbits/s    frame=  110 fps= 24 q=28.0 size=      60kB time=00:00:04.75 bitrate= 103.4kbits/s    frame=  122 fps= 24 q=28.0 size=      71kB time=00:00:05.26 bitrate= 110.0kbits/s    frame=  134 fps= 24 q=28.0 size=      82kB time=00:00:05.78 bitrate= 115.9kbits/s    frame=  146 fps= 24 q=28.0 size=      92kB time=00:00:06.29 bitrate= 120.3kbits/s    frame=  158 fps= 24 q=28.0 size=     103kB time=00:00:06.78 bitrate= 124.7kbits/s    frame=  170 fps= 24 q=28.0 size=     114kB time=00:00:07.29 bitrate= 127.6kbits/s    frame=  183 fps= 24 q=28.0 size=     125kB time=00:00:07.80 bitrate= 131.4kbits/s    frame=  195 fps= 24 q=28.0 size=     135kB time=00:00:08.31 bitrate= 133.3kbits/s    frame=  207 fps= 24 q=28.0 size=     146kB time=00:00:08.81 bitrate= 135.8kbits/s    frame=  219 fps= 24 q=28.0 size=     156kB time=00:00:09.30 bitrate= 137.8kbits/s    frame=  231 fps= 24 q=28.0 size=     167kB time=00:00:09.79 bitrate= 139.9kbits/s    frame=  243 fps= 24 q=28.0 size=     177kB time=00:00:10.30 bitrate= 141.1kbits/s    frame=  255 fps= 24 q=28.0 size=     188kB time=00:00:10.79 bitrate= 142.6kbits/s    frame=  267 fps= 24 q=28.0 size=     198kB time=00:00:11.30 bitrate= 143.6kbits/s    frame=  279 fps= 24 q=28.0 size=     209kB time=00:00:11.81 bitrate= 144.6kbits/s    frame=  291 fps= 24 q=28.0 size=     219kB time=00:00:12.30 bitrate= 145.5kbits/s    frame=  303 fps= 24 q=28.0 size=     229kB time=00:00:12.82 bitrate= 146.3kbits/s    frame=  315 fps= 24 q=28.0 size=     256kB time=00:00:13.31 bitrate= 157.6kbits/s    frame=  327 fps= 24 q=28.0 size=     268kB time=00:00:13.82 bitrate= 158.6kbits/s    frame=  339 fps= 24 q=28.0 size=     278kB time=00:00:14.31 bitrate= 159.3kbits/s    frame=  352 fps= 24 q=28.0 size=     290kB time=00:00:14.82 bitrate= 160.2kbits/s    frame=  364 fps= 24 q=28.0 size=     301kB time=00:00:12.00 bitrate= 205.2kbits/s    frame=  375 fps= 23 q=32764.0 Lsize=     383kB time=00:00:15.01 bitrate= 208.8kbits/s    
+video:109kB audio:257kB subtitle:0 global headers:0kB muxing overhead 4.618629%
+[libx264 @ 0x212c0e0] frame I:2     Avg QP:21.44  size: 14522
+[libx264 @ 0x212c0e0] frame P:94    Avg QP:21.89  size:   513
+[libx264 @ 0x212c0e0] frame B:279   Avg QP:22.76  size:   121
+[libx264 @ 0x212c0e0] consecutive B-frames:  0.8%  0.0%  0.0% 99.2%
+[libx264 @ 0x212c0e0] mb I  I16..4: 43.4% 28.7% 28.0%
+[libx264 @ 0x212c0e0] mb P  I16..4:  0.4%  0.0%  0.0%  P16..4: 14.5%  0.3%  1.3%  0.0%  0.0%    skip:83.4%
+[libx264 @ 0x212c0e0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  5.7%  0.0%  0.0%  direct: 0.0%  skip:94.2%  L0:37.5% L1:62.5% BI: 0.0%
+[libx264 @ 0x212c0e0] 8x8 transform intra:24.2% inter:92.9%
+[libx264 @ 0x212c0e0] coded y,uvDC,uvAC intra: 37.3% 46.5% 22.2% inter: 0.2% 4.5% 0.1%
+[libx264 @ 0x212c0e0] i16 v,h,dc,p:  1% 58%  1% 39%
+[libx264 @ 0x212c0e0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  6% 46% 26%  3%  3%  3%  6%  2%  6%
+[libx264 @ 0x212c0e0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 11% 57% 11%  2%  3%  3%  5%  3%  5%
+[libx264 @ 0x212c0e0] i8c dc,h,v,p: 62% 23% 13%  2%
+[libx264 @ 0x212c0e0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x212c0e0] ref P L0: 65.8%  0.5% 22.8% 10.9%
+[libx264 @ 0x212c0e0] ref B L0: 82.0% 17.0%  1.0%
+[libx264 @ 0x212c0e0] ref B L1: 96.0%  4.0%
+[libx264 @ 0x212c0e0] kb/s:59.21
