@@ -14,8 +14,10 @@ import threading
 import datetime
 import imutils
 import cv2
+import numpy as np
 import os
 import time
+import subprocess
 
 import utils
 import config
@@ -48,6 +50,7 @@ class SetupGUI:
         self.stop_event = None
 
         # initialize the root window and widgets
+        self.res = self.get_res()
         self.root = Tk()
         self.root.title('Setup GUI')
         self.root.wm_protocol("WM_DELETE_WINDOW", self.on_close)
@@ -82,6 +85,13 @@ class SetupGUI:
             self.threads.append(threading.Thread(target=self.video_loop, args=(i,)))
             self.threads[i].start()
 
+    def get_res(self):
+        output = subprocess.Popen('xrandr | grep \* | cut -d" " -f4',shell=True, stdout=subprocess.PIPE).communicate()[0]
+        resolution = output.split()[0].split(b'x')
+        utils.log('INFO', 'current Resolution: ' + str(resolution[0]) + 'x' + str(resolution[1]))
+        return int(resolution[0]), int(resolution[1])
+
+
     def type_selected(self, *args):
         utils.log('INFO', 'Config updated:')
         j_dict = {}
@@ -100,9 +110,11 @@ class SetupGUI:
             # keep looping over frames until we are instructed to stop
             while not self.stop_event.is_set():
                 # grab the frame from the video stream and resize it to
-                # have a maximum width of 300 pixels
+                # have a maximum width of WIDTH/count pixels
                 ret, self.frames[i] = self.caps[i].read()
-                self.frames[i] = imutils.resize(self.frames[i], width=int(1000.0/self.count))
+                ratio = ((1.0 * self.res[0])/self.count)/self.frames[i].shape[0]
+                self.frames[i] = cv2.resize(self.frames[i], (int(self.frames[i].shape[0]*ratio), int(self.frames[i].shape[1]*ratio)))
+                # utils.log('INFO', 'Resized: ' + str(self.frames[i].shape))
 
                 # OpenCV represents images in BGR order; however PIL
                 # represents images in RGB order, so we need to swap

@@ -1,7 +1,7 @@
 apt install python3-pip
 apt-get install python3-pil python3-pil.imagetk
 
-pip3 install icalendar imutils Pillow scikit-image
+pip3 install icalendar imutils Pillow scikit-image pygtk
 
 cd ~
 echo ">>Fetching OpenCV..."

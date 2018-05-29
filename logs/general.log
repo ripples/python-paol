@@ -609,3 +609,176 @@
 [180520-133703] INFO: Loading all Conf...
 [180520-133703] INFO: Triggerring video1
 [180520-133703] INFO: Triggerring video0
+[180520-160334] INFO: Searching for available video devices...
+[180520-160334] INFO: Found 2 video devices:
+[180520-160334] INFO:  video0
+[180520-160334] INFO:  video1
+[180520-160335] INFO: Config updated:
+[180520-160335] INFO:  video0 caps NOT_SET
+[180520-160335] INFO: Config updated:
+[180520-160335] INFO:  video0 caps NOT_SET
+[180520-160335] INFO:  video1 caps NOT_SET
+[180520-160422] INFO: Config updated:
+[180520-160422] INFO:  video0 caps LECTURE(w/ AUDIO)
+[180520-160422] INFO:  video1 caps NOT_SET
+[180520-160427] INFO: Config updated:
+[180520-160427] INFO:  video0 caps LECTURE(w/ AUDIO)
+[180520-160427] INFO:  video1 caps WHITEBOARD
+[180520-160430] INFO: Closing SETUP Window...
+[180520-160431] WARN: RuntimeError on GUI.
+[180520-160431] INFO: Check logs/gui_err.log for details.
+[180520-202856] INFO: Starting scheduling capturing...
+[180520-202856] INFO: LOADING GCAL from CalendarTest.ics
+[180520-202856] INFO: LOADING Successful.
+[180520-202856] INFO: EVENT list of ICS file:
+[180520-202856] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180520-202856] INFO:   start:2018-05-21 00:28:59
+[180520-202856] INFO:   end:  2018-05-21 00:29:14
+[180520-202856] INFO:  SPRING18 PAOL_001232_FA17_CNAC
+[180520-202856] INFO:   start:2018-05-21 00:29:21
+[180520-202856] INFO:   end:  2018-05-21 00:29:28
+[180520-202856] INFO: Scheduling task: capture at 2018-05-21 00:28:59
+[180520-202856] INFO: Scheduled task: capture at 2018-05-21 00:28:59
+[180520-202856] INFO: Scheduling task: capture at 2018-05-21 00:29:21
+[180520-202856] INFO: Scheduled task: capture at 2018-05-21 00:29:21
+[180520-202856] INFO: Finished scheduling capturing...
+[180520-202856] INFO: Serving POST on port 8000...
+[180520-202859] INFO: Initializing task: capture
+[180520-202859] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180520-202859] INFO: Loading all Conf...
+[180520-202859] INFO: Checking Config
+[180520-202859] INFO: Config validation returns True
+[180520-202859] INFO: Preparing saving path...
+[180520-202859] INFO: Saving to /home/will/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--00-28-59/
+[180520-202859] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 15.0]
+[180520-202859] INFO: Loading all Conf...
+[180520-202859] INFO: Triggerring video0
+[180520-202859] INFO:  LECTURE
+[180520-202859] INFO: Triggerring video1
+[180520-202859] INFO:  WHITEBOARD
+[180520-202915] INFO: ==>Capturing successful, uploading all lectures
+[180520-202915] INFO: ==>Uploading...
+[180520-202915] INFO: ==>Return code: 127
+[180520-202915] INFO: Task capture Done.
+[180520-202915] INFO: Finishing task: capture
+[180520-202921] INFO: Initializing task: capture
+[180520-202921] INFO: Running task: capture['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180520-202921] INFO: Loading all Conf...
+[180520-202921] INFO: Checking Config
+[180520-202921] INFO: Config validation returns True
+[180520-202921] INFO: Preparing saving path...
+[180520-202921] INFO: Saving to /home/will/recordings/readyToUpload/SPRING18/PAOL_001232_FA17_CNAC/05-21-18--00-29-21/
+[180520-202921] INFO: Start capturing ['SPRING18', 'PAOL_001232_FA17_CNAC', 7.0]
+[180520-202921] INFO: Loading all Conf...
+[180520-202921] INFO: Triggerring video0
+[180520-202921] INFO:  LECTURE
+[180520-202921] INFO: Triggerring video1
+[180520-202921] INFO:  WHITEBOARD
+[180520-202929] INFO: ==>Capturing successful, uploading all lectures
+[180520-202929] INFO: ==>Uploading...
+[180520-202929] INFO: ==>Return code: 127
+[180520-202929] INFO: Task capture Done.
+[180520-202929] INFO: Finishing task: capture
+[180529-105051] INFO: Searching for available video devices...
+[180529-105051] INFO: Found 1 video devices:
+[180529-105051] INFO:  video0
+[180529-105053] INFO: Config updated:
+[180529-105053] INFO:  video0 caps NOT_SET
+[180529-105126] INFO: Closing SETUP Window...
+[180529-105127] WARN: RuntimeError on GUI.
+[180529-105127] INFO: Check logs/gui_err.log for details.
+[180529-120014] INFO: Searching for available video devices...
+[180529-120014] INFO: Found 1 video devices:
+[180529-120014] INFO:  video0
+[180529-120015] INFO: Config updated:
+[180529-120015] INFO:  video0 caps DISABLED
+[180529-120030] INFO: Closing SETUP Window...
+[180529-120153] INFO: Searching for available video devices...
+[180529-120153] INFO: Found 1 video devices:
+[180529-120153] INFO:  video0
+[180529-120154] INFO: Config updated:
+[180529-120154] INFO:  video0 caps WHITEBOARD
+[180529-120204] INFO: Closing SETUP Window...
+[180529-120205] WARN: RuntimeError on GUI.
+[180529-120205] INFO: Check logs/gui_err.log for details.
+[180529-120712] INFO: Searching for available video devices...
+[180529-120712] INFO: Found 1 video devices:
+[180529-120712] INFO:  video0
+[180529-120713] INFO: Config updated:
+[180529-120713] INFO:  video0 caps NOT_SET
+[180529-120722] INFO: Closing SETUP Window...
+[180529-120723] WARN: RuntimeError on GUI.
+[180529-120724] INFO: Check logs/gui_err.log for details.
+[180529-121720] INFO: Searching for available video devices...
+[180529-121720] INFO: Found 1 video devices:
+[180529-121720] INFO:  video0
+[180529-121720] INFO: Config updated:
+[180529-121720] INFO:  video0 caps NOT_SET
+[180529-121917] INFO: Searching for available video devices...
+[180529-121917] INFO: Found 1 video devices:
+[180529-121917] INFO:  video0
+[180529-121917] INFO: current Resolution: b'480'xb'320'
+[180529-121918] INFO: Config updated:
+[180529-121918] INFO:  video0 caps LECTURE(w/ AUDIO)
+[180529-121943] INFO: Closing SETUP Window...
+[180529-122201] INFO: Searching for available video devices...
+[180529-122201] INFO: Found 1 video devices:
+[180529-122201] INFO:  video0
+[180529-122201] INFO: current Resolution: b'480'xb'320'
+[180529-122202] INFO: Config updated:
+[180529-122202] INFO:  video0 caps COMPUTER
+[180529-122217] INFO: Config updated:
+[180529-122217] INFO:  video0 caps LECTURE(w/ AUDIO)
+[180529-122705] INFO: Searching for available video devices...
+[180529-122705] INFO: Found 1 video devices:
+[180529-122705] INFO:  video0
+[180529-122705] INFO: current Resolution: b'480'xb'320'
+[180529-122705] INFO: Config updated:
+[180529-122705] INFO:  video0 caps COMPUTER
+[180529-122713] INFO: Closing SETUP Window...
+[180529-122810] INFO: Searching for available video devices...
+[180529-122810] INFO: Found 1 video devices:
+[180529-122810] INFO:  video0
+[180529-122810] INFO: current Resolution: b'480'xb'320'
+[180529-122811] INFO: Config updated:
+[180529-122811] INFO:  video0 caps NOT_SET
+[180529-122817] INFO: Closing SETUP Window...
+[180529-122959] INFO: Searching for available video devices...
+[180529-122959] INFO: Found 1 video devices:
+[180529-122959] INFO:  video0
+[180529-122959] INFO: current Resolution: b'480'xb'320'
+[180529-123000] INFO: Config updated:
+[180529-123000] INFO:  video0 caps WHITEBOARD
+[180529-123001] INFO: Resized: (640, 480, 3)
+[180529-123001] INFO: Resized: (640, 480, 3)
+[180529-123001] INFO: Resized: (640, 480, 3)
+[180529-123002] INFO: Resized: (640, 480, 3)
+[180529-123002] INFO: Resized: (640, 480, 3)
+[180529-123002] INFO: Resized: (640, 480, 3)
+[180529-123002] INFO: Resized: (640, 480, 3)
+[180529-123002] INFO: Resized: (640, 480, 3)
+[180529-123003] INFO: Resized: (640, 480, 3)
+[180529-123003] INFO: Resized: (640, 480, 3)
+[180529-123003] INFO: Resized: (640, 480, 3)
+[180529-123003] INFO: Resized: (640, 480, 3)
+[180529-123003] INFO: Resized: (640, 480, 3)
+[180529-123003] INFO: Resized: (640, 480, 3)
+[180529-123004] INFO: Resized: (640, 480, 3)
+[180529-123004] INFO: Resized: (640, 480, 3)
+[180529-123004] INFO: Resized: (640, 480, 3)
+[180529-123004] INFO: Resized: (640, 480, 3)
+[180529-123005] INFO: Resized: (640, 480, 3)
+[180529-123005] INFO: Resized: (640, 480, 3)
+[180529-123005] INFO: Closing SETUP Window...
+[180529-123005] INFO: Resized: (640, 480, 3)
+[180529-123006] WARN: RuntimeError on GUI.
+[180529-123006] INFO: Check logs/gui_err.log for details.
+[180529-123208] INFO: Searching for available video devices...
+[180529-123208] INFO: Found 1 video devices:
+[180529-123208] INFO:  video0
+[180529-123208] INFO: current Resolution: b'480'xb'320'
+[180529-123209] INFO: Config updated:
+[180529-123209] INFO:  video0 caps DISABLED
+[180529-123214] INFO: Closing SETUP Window...
+[180529-123215] WARN: RuntimeError on GUI.
+[180529-123215] INFO: Check logs/gui_err.log for details.
