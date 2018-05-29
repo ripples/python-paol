@@ -59,6 +59,7 @@ def capture(args):
         exit(0)
 
     then = datetime.utcnow()
+    os.chdir(os.path.dirname(__file__))
 
     utils.log('INFO', 'Preparing saving path...')
     time_str = then.strftime("%m-%d-%y--%H-%M-%S")
@@ -115,11 +116,12 @@ def capture(args):
         pass
 
     print()
-    utils.log('INFO', "==>Capturing successful, uploading all lectures")
-    pu = subprocess.Popen("~/paol-code/scripts/upload/uploadAll.sh", stdout=subprocess.PIPE, shell=True)
-    utils.log('INFO', "==>Uploading...")
+    utils.log('INFO', "Capturing successful, uploading all lectures")
+    with open('./logs/upload.log', 'a+') as f:
+        pu = subprocess.Popen("./scripts/uploadAll.sh", stdout=f, stderr=f, shell=True, cwd=str(os.getcwd()))
+    utils.log('INFO', "Uploading...")
     _, er = pu.communicate()
-    utils.log('INFO', "==>Return code: "+str(pu.returncode))
+    utils.log('INFO', "Return code: "+str(pu.returncode))
     return '0'
 
 

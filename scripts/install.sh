@@ -1,15 +1,15 @@
-apt install python3-pip
-apt-get install python3-pil python3-pil.imagetk
+apt-get install python3-pip -y
+apt-get install python3-pil python3-pil.imagetk ffmpeg -y
 
 pip3 install icalendar imutils Pillow scikit-image pygtk
 
 cd ~
 echo ">>Fetching OpenCV..."
 git clone https://github.com/opencv/opencv.git
-sudo apt-get install build-essentials
+sudo apt-get install build-essentials -y
 sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev -y
-sudo apt-get install libgl1-mesa-dev
-sudo apt install libgstreamer-plugins-base1.0-dev
+sudo apt-get install libgl1-mesa-dev -y
+sudo apt install libgstreamer-plugins-base1.0-dev -y
 
 cd ./opencv
 mkdir release
