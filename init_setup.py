@@ -113,11 +113,11 @@ class SetupGUI:
                 # grab the frame from the video stream and resize it to
                 # have a maximum width of WIDTH/count pixels
                 ret, self.frames[i] = self.caps[i].read()
-                utils.log('INFO', 'Captured size'+ str(self.frames[i].shape))
+                # utils.log('INFO', 'Captured size'+ str(self.frames[i].shape))
                 ratio = ((1.0 * self.res[0])/(self.count + 1))/self.frames[i].shape[0]
-                utils.log('INFO', 'Ratio: ' + str(ratio))
+                # utils.log('INFO', 'Ratio: ' + str(ratio))
                 self.frames[i] = cv2.resize(self.frames[i], (int(self.frames[i].shape[1]*ratio), int(self.frames[i].shape[0]*ratio)))
-                utils.log('INFO', 'Resized: ' + str(self.frames[i].shape))
+                # utils.log('INFO', 'Resized: ' + str(self.frames[i].shape))
 
                 # OpenCV represents images in BGR order; however PIL
                 # represents images in RGB order, so we need to swap
