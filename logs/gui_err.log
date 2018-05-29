@@ -1,22 +1,9 @@
-<<<<<<< HEAD
-Exception ignored in: <bound method PhotoImage.__del__ of <PIL.ImageTk.PhotoImage object at 0x769fdb30>>
+Exception ignored in: <module 'threading' from '/usr/lib/python3.6/threading.py'>
 Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/PIL/ImageTk.py", line 118, in __del__
-    name = self.__photo.name
-AttributeError: 'PhotoImage' object has no attribute '_PhotoImage__photo'
-=======
-Exception ignored in: <bound method PhotoImage.__del__ of <PIL.ImageTk.PhotoImage object at 0x7fb79d9e67f0>>
-Traceback (most recent call last):
-  File "/home/paol/.local/lib/python3.5/site-packages/PIL/ImageTk.py", line 130, in __del__
-    name = self.__photo.name
-AttributeError: 'PhotoImage' object has no attribute '_PhotoImage__photo'
-Exception ignored in: <module 'threading' from '/usr/lib/python3.5/threading.py'>
-Traceback (most recent call last):
-  File "/usr/lib/python3.5/threading.py", line 1288, in _shutdown
+  File "/usr/lib/python3.6/threading.py", line 1294, in _shutdown
     t.join()
-  File "/usr/lib/python3.5/threading.py", line 1054, in join
+  File "/usr/lib/python3.6/threading.py", line 1056, in join
     self._wait_for_tstate_lock()
-  File "/usr/lib/python3.5/threading.py", line 1070, in _wait_for_tstate_lock
+  File "/usr/lib/python3.6/threading.py", line 1072, in _wait_for_tstate_lock
     elif lock.acquire(block, timeout):
 KeyboardInterrupt
->>>>>>> ccec8cd6eb901f5cfc0dfee0eca2b4c603ce892b

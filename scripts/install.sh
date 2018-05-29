@@ -1,7 +1,7 @@
 apt-get install python3-pip -y
 apt-get install python3-pil python3-pil.imagetk ffmpeg -y
 
-pip3 install icalendar imutils Pillow scikit-image pygtk
+pip3 install icalendar imutils Pillow scikit-image
 
 cd ~
 echo ">>Fetching OpenCV..."
@@ -17,5 +17,5 @@ cd release
 echo ">>Compiling OpenCV..."
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 
-make
+make -j4
 sudo make install

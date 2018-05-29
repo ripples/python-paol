@@ -89,7 +89,7 @@ class SetupGUI:
     def get_res(self):
         output = subprocess.Popen('xrandr | grep \* | cut -d" " -f4',shell=True, stdout=subprocess.PIPE).communicate()[0]
         resolution = output.split()[0].split(b'x')
-        utils.log('INFO', 'current Resolution: ' + str(resolution[0]) + 'x' + str(resolution[1]))
+        utils.log('INFO', 'Resolution: ' + str(int(resolution[0])) + 'x' + str(int(resolution[1])))
         return int(resolution[0]), int(resolution[1])
 
 
@@ -113,9 +113,11 @@ class SetupGUI:
                 # grab the frame from the video stream and resize it to
                 # have a maximum width of WIDTH/count pixels
                 ret, self.frames[i] = self.caps[i].read()
-                ratio = ((1.0 * self.res[0])/self.count)/self.frames[i].shape[0]
-                self.frames[i] = cv2.resize(self.frames[i], (int(self.frames[i].shape[0]*ratio), int(self.frames[i].shape[1]*ratio)))
-                # utils.log('INFO', 'Resized: ' + str(self.frames[i].shape))
+                utils.log('INFO', 'Captured size'+ str(self.frames[i].shape))
+                ratio = ((1.0 * self.res[0])/(self.count + 1))/self.frames[i].shape[0]
+                utils.log('INFO', 'Ratio: ' + str(ratio))
+                self.frames[i] = cv2.resize(self.frames[i], (int(self.frames[i].shape[1]*ratio), int(self.frames[i].shape[0]*ratio)))
+                utils.log('INFO', 'Resized: ' + str(self.frames[i].shape))
 
                 # OpenCV represents images in BGR order; however PIL
                 # represents images in RGB order, so we need to swap
