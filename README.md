@@ -1,5 +1,5 @@
 # paol-python
-## Remember to using python3!!!
+## Remember to use python3!!!
 ## Install required packages from scripts/install.sh first
 ## Run init setup first
 ## capture_now for capturing
